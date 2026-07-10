@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/opus-logo-light.svg">
-  <img alt="Opus Growth" src="assets/opus-logo.svg" width="320">
+  <img alt="Opus Growth" src="assets/opus-logo.svg" width="300">
 </picture>
 
 <h3>The MCP Connector for Ad Platforms</h3>
@@ -13,11 +13,15 @@ Paste one URL. No terminal, no API keys, no developer token.</p>
 <p>
 <a href="https://opus-growth.com"><img src="https://img.shields.io/badge/opus--growth.com-D97757?style=for-the-badge&logoColor=white" alt="Website"></a>
 <img src="https://img.shields.io/badge/protocol-MCP-141413?style=for-the-badge" alt="MCP">
-<img src="https://img.shields.io/badge/Google%20·%20Meta%20·%20LinkedIn%20·%20TikTok-3d3d3a?style=for-the-badge" alt="Platforms">
+<img src="https://img.shields.io/badge/107%2B-tools-3d3d3a?style=for-the-badge" alt="107+ tools">
 <img src="https://img.shields.io/badge/made%20in-Türkiye-E30A17?style=for-the-badge" alt="Made in Türkiye">
 </p>
 
 <a href="https://opus-growth.com"><b>opus-growth.com&nbsp;→</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;7-day free trial, no card
+
+<br/><br/>
+
+<img src="assets/screens/chat.png" alt="Ask your ad accounts anything, right inside your AI chat" width="840">
 
 </div>
 
@@ -32,6 +36,24 @@ Paste one URL. No terminal, no API keys, no developer token.</p>
 > *“Increase the budget of my best-converting campaign by 20%.”*
 
 The AI reads your reports, finds waste, and even builds campaigns — but **never changes anything without showing you a preview and asking for your confirmation first.**
+
+## See it in action
+
+<div align="center">
+<img src="assets/screens/dashboard.png" alt="Cross-platform ad performance, at a glance" width="840">
+<br/>
+<sub><i>Representative screens with sample data.</i></sub>
+</div>
+
+## Why teams use it
+
+| Managing ads the old way | With Opus Growth |
+| :-- | :-- |
+| Log into 3–4 dashboards every day | Ask one question in your AI chat |
+| Export to spreadsheets for reports | Instant, formatted reports |
+| Hunt for wasted spend by hand | Waste flagged automatically |
+| Risky bulk edits | Preview + one-tap confirm on every change |
+| A terminal, API keys, a dev token | One URL, one login, ~5 minutes |
 
 ## How it works
 
@@ -57,7 +79,9 @@ Performance reports · account audits · search-term waste analysis · campaign 
 - 🔒 **Preview + confirm** on every write — the AI can’t touch your account on its own
 - 📉 **Budget guardrails** — every increase is capped per change
 - 🧾 **Full audit log** of every change
-- 🔑 **Official OAuth**, tokens stored encrypted, revoke access anytime
+- 🔑 **Official OAuth**, tokens encrypted at rest, revoke access anytime
+
+See [`SECURITY.md`](SECURITY.md) for our full security posture and disclosure policy.
 
 ## Works with
 
@@ -65,14 +89,35 @@ Performance reports · account audits · search-term waste analysis · campaign 
 
 ## Get started
 
-👉 **[opus-growth.com](https://opus-growth.com)** — 7-day free trial, no card required.
+<div align="center">
+
+### 👉 [opus-growth.com](https://opus-growth.com)
+
+**7-day free trial — no card required.**
+
+</div>
 
 ## FAQ
 
-**Do I need to code?** No. One URL and one login.
-**Is it safe?** Official OAuth + a preview/confirm step on every change + encrypted tokens you can revoke anytime.
-**Which AI works?** Any MCP client — ChatGPT connectors, Claude, Cursor and more.
-**Türkçe var mı?** Evet — arayüz ve destek tamamen Türkçe. [Detaylar →](https://opus-growth.com)
+<details>
+<summary><b>Do I need to code?</b></summary>
+No. One URL and one login. No terminal, no API keys, no developer token.
+</details>
+
+<details>
+<summary><b>Is it safe to connect my account?</b></summary>
+Yes. Access is via official OAuth (we never see your password), tokens are encrypted, every change is preview-and-confirm, and you can revoke access anytime.
+</details>
+
+<details>
+<summary><b>Which AI assistants work?</b></summary>
+Any MCP client — ChatGPT connectors, Claude, Claude Code, Cursor, Codex and more.
+</details>
+
+<details>
+<summary><b>Türkçe destekliyor mu?</b></summary>
+Evet — arayüz ve destek tamamen Türkçe. <a href="https://opus-growth.com">Detaylar →</a>
+</details>
 
 ---
 
@@ -80,5 +125,5 @@ Performance reports · account audits · search-term waste analysis · campaign 
 <sub>ℹ️ Opus Growth is a <b>hosted service</b> — this repository is a project overview and intentionally contains no source code.</sub>
 
 <br/><br/>
-Made with ☕ in Türkiye&nbsp;·&nbsp;<a href="https://opus-growth.com">opus-growth.com</a>&nbsp;·&nbsp;<a href="https://opus-growth.com/yasal/gizlilik-kvkk">Privacy</a>
+Made with ☕ in Türkiye&nbsp;·&nbsp;<a href="https://opus-growth.com">opus-growth.com</a>&nbsp;·&nbsp;<a href="https://opus-growth.com/yasal/gizlilik-kvkk">Privacy</a>&nbsp;·&nbsp;<a href="CHANGELOG.md">Changelog</a>
 </div>

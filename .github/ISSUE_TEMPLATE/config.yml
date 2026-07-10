@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌐 Website & free trial
+    url: https://opus-growth.com
+    about: Start a 7-day free trial and connect your ad accounts.
+  - name: 💬 Support
+    url: mailto:support@opus-growth.com
+    about: Questions, help with setup, or account issues.
+  - name: 🔒 Security
+    url: mailto:security@opus-growth.com
+    about: Report a security concern (please do not open a public issue).
