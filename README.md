@@ -59,7 +59,7 @@ The AI reads your reports, finds waste, and even builds campaigns — but **neve
 {
   "mcpServers": {
     "opus-growth": {
-      "url": "https://YOUR-CONNECTOR-URL"
+      "url": "https://googleads.opus-growth.com/mcp"
     }
   }
 }
