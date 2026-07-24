@@ -1,0 +1,36 @@
+name: Publish to MCP Registry
+
+# Resmî MCP Registry'ye (registry.modelcontextprotocol.io) otomatik yayın.
+# Kimlik doğrulama GitHub Actions OIDC ile yapılır — depoda saklanan sır YOKTUR.
+# OIDC, io.github.<owner>/* ad alanının sahipliğini kanıtlar; server.json'daki
+# "name" alanı bu yüzden io.github.opusgrowth/ads-mcp olmalıdır.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - server.json
+      - .github/workflows/publish-mcp.yml
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # OIDC jetonu üretmek için ŞART
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mcp-publisher
+        run: |
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.0/mcp-publisher_linux_amd64.tar.gz" \
+            | tar -xz mcp-publisher
+          sudo install -m 0755 mcp-publisher /usr/local/bin/mcp-publisher
+          mcp-publisher --version
+
+      - name: Authenticate (GitHub OIDC)
+        run: mcp-publisher login github-oidc
+
+      - name: Publish server.json
+        run: mcp-publisher publish
