@@ -53,8 +53,8 @@ jobs:
       - name: Check whether this version is already published
         id: check
         run: |
-          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
-          import json, urllib.request
+          python3 - <<'EOF'
+          import json, os, urllib.request
           local = json.load(open("server.json"))
           name, version = local["name"], local["version"]
           try:
@@ -67,14 +67,13 @@ jobs:
                   if (s.get("server") or {}).get("name") == name
               }
           except Exception as e:            # registry unreachable -> attempt the publish anyway
-              print(f"# registry lookup failed: {e}")
+              print(f"registry lookup failed ({e}) - will try to publish")
               published = set()
-          if version in published:
-              print("needed=false")
-              print(f"# {name} v{version} is already published - skipping")
-          else:
-              print("needed=true")
-              print(f"# publishing {name} v{version}")
+          needed = version not in published
+          print(f"{name} v{version}: " + ("publishing" if needed else "already published, skipping"))
+          # $GITHUB_OUTPUT accepts ONLY key=value lines - never write comments/messages here.
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"needed={'true' if needed else 'false'}\n")
           EOF
 
       - name: Install mcp-publisher
