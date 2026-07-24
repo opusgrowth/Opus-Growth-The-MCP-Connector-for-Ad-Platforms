@@ -2,15 +2,18 @@ name: Publish to MCP Registry
 
 # Resmî MCP Registry'ye (registry.modelcontextprotocol.io) otomatik yayın.
 # Kimlik doğrulama GitHub Actions OIDC ile yapılır — depoda saklanan sır YOKTUR.
-# OIDC, io.github.<owner>/* ad alanının sahipliğini kanıtlar; server.json'daki
-# "name" alanı bu yüzden io.github.opusgrowth/ads-mcp olmalıdır.
+# OIDC yalnızca io.github.<owner>/* ad alanının sahipliğini kanıtlar; server.json'daki
+# "name" bu yüzden io.github.opusgrowth/ads-mcp olmalıdır.
+#
+# YENİ SÜRÜM YAYINLAMAK: server.json içindeki "version" alanını yükselt ve push et.
+# Sürüm değişmediyse iş akışı yayını ATLAR — registry aynı sürümü reddediyor
+# ("cannot publish duplicate version"), boru hattı gereksiz yere kırmızıya düşmesin.
 
 on:
   push:
     branches: [main]
     paths:
       - server.json
-      - .github/workflows/publish-mcp.yml
   workflow_dispatch:
 
 jobs:
@@ -24,7 +27,7 @@ jobs:
 
       - name: Validate server.json (fail fast, before publishing)
         run: |
-          python3 - <<'PY'
+          python3 - <<'EOF'
           import json, sys, urllib.parse
           d = json.load(open("server.json"))
           errs = []
@@ -45,9 +48,37 @@ jobs:
                   print("  -", e)
               sys.exit(1)
           print(f"server.json OK - {d['name']} v{d['version']} ({len(desc)}/100 chars)")
-          PY
+          EOF
+
+      - name: Check whether this version is already published
+        id: check
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, urllib.request
+          local = json.load(open("server.json"))
+          name, version = local["name"], local["version"]
+          try:
+              url = "https://registry.modelcontextprotocol.io/v0/servers?search=" + name.split("/")[0]
+              with urllib.request.urlopen(url, timeout=20) as r:
+                  data = json.load(r)
+              published = {
+                  (s.get("server") or {}).get("version")
+                  for s in data.get("servers", [])
+                  if (s.get("server") or {}).get("name") == name
+              }
+          except Exception as e:            # registry unreachable -> attempt the publish anyway
+              print(f"# registry lookup failed: {e}")
+              published = set()
+          if version in published:
+              print("needed=false")
+              print(f"# {name} v{version} is already published - skipping")
+          else:
+              print("needed=true")
+              print(f"# publishing {name} v{version}")
+          EOF
 
       - name: Install mcp-publisher
+        if: steps.check.outputs.needed == 'true'
         run: |
           curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.0/mcp-publisher_linux_amd64.tar.gz" \
             | tar -xz mcp-publisher
@@ -55,7 +86,17 @@ jobs:
           mcp-publisher --version
 
       - name: Authenticate (GitHub OIDC)
+        if: steps.check.outputs.needed == 'true'
         run: mcp-publisher login github-oidc
 
       - name: Publish server.json
+        if: steps.check.outputs.needed == 'true'
         run: mcp-publisher publish
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.check.outputs.needed }}" = "true" ]; then
+            echo "Published a new version to the MCP Registry." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Version unchanged - nothing to publish (registry entry stays live)." >> "$GITHUB_STEP_SUMMARY"
+          fi
