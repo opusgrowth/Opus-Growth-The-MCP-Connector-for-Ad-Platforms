@@ -1,8 +1,9 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.opusgrowth/ads-mcp",
-  "description": "Manage Google, Microsoft, TikTok & LinkedIn Ads from Claude or ChatGPT — approval-gated writes.",
-  "version": "1.0.0",
+  "title": "Opus Growth — Ad Platforms MCP Connector",
+  "description": "233 tools for Google, Microsoft, TikTok, LinkedIn Ads in Claude or ChatGPT. Writes need approval.",
+  "version": "1.1.0",
   "websiteUrl": "https://opus-growth.com",
   "repository": {
     "url": "https://github.com/opusgrowth/Opus-Growth-The-MCP-Connector-for-Ad-Platforms",
