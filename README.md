@@ -7,15 +7,15 @@
 
 <h1>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT &amp; Claude — the MCP Connector for Ad Platforms</h1>
 
-<p><b>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP client.</b><br/>
+<p><b>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP-compatible app.</b><br/>
 Paste one URL — no terminal, no API keys, no developer token.<br/>
-<sub>233 tools · real write actions with preview &amp; approval · Meta Ads in final platform review.</sub></p>
+<sub>290+ tools · ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · Meta Ads in final platform review.</sub></p>
 
 <p>
 <a href="https://opus-growth.com"><img src="https://img.shields.io/badge/opus--growth.com-D97757?style=for-the-badge&logoColor=white" alt="Website"></a>
 <img src="https://img.shields.io/badge/protocol-MCP-141413?style=for-the-badge" alt="Model Context Protocol">
 <img src="https://img.shields.io/badge/4%20ad%20platforms-Live-2e7d54?style=for-the-badge" alt="Four ad platforms live">
-<img src="https://img.shields.io/badge/tools-233-141413?style=for-the-badge" alt="233 tools">
+<img src="https://img.shields.io/badge/tools-290%2B-141413?style=for-the-badge" alt="290+ tools">
 <img src="https://img.shields.io/badge/works%20with-ChatGPT%20%26%20Claude-141413?style=for-the-badge" alt="Works with ChatGPT and Claude">
 </p>
 
@@ -60,13 +60,13 @@ The AI reads your reports, finds waste, and even builds campaigns — but **neve
 {
   "mcpServers": {
     "opus-growth": {
-      "url": "https://mcp.opus-growth.com"
+      "url": "https://mcp.opus-growth.com/mcp"
     }
   }
 }
 ```
 
-Your connector URL is **`https://mcp.opus-growth.com`** — setup takes about 60 seconds.
+Your connector URL is **`https://mcp.opus-growth.com/mcp`** — setup takes about 60 seconds.
 
 <div align="center">
 <img src="assets/screens/opus-growth-connect-3-steps.png" alt="Connect Google Ads to ChatGPT or Claude in three steps — copy your connector URL, paste into your AI assistant, sign in with Google" width="840">
@@ -74,7 +74,7 @@ Your connector URL is **`https://mcp.opus-growth.com`** — setup takes about 60
 
 ## How do I connect Google Ads to ChatGPT or Claude?
 
-1. **Copy** the connector URL: `https://mcp.opus-growth.com`
+1. **Copy** the connector URL: `https://mcp.opus-growth.com/mcp`
 2. **Paste** it into ChatGPT / Claude → *Settings → Connectors (MCP)*
 3. **Sign in** with Google (official OAuth) — done in about 60 seconds
 
@@ -84,15 +84,15 @@ No code. No Google Cloud project. No developer token.
 
 | Platform | Status | Tools |
 | :-- | :-- | :-- |
-| **[Google Ads](https://opus-growth.com/en/google-ads-mcp/)** | ✅ Live | 78 |
+| **[Google Ads](https://opus-growth.com/en/google-ads-mcp/)** | ✅ Live | 69 |
 | **[Microsoft Advertising](https://opus-growth.com/en/microsoft-ads-mcp/)** (Bing) | ✅ Live | 30 |
 | **[TikTok Ads](https://opus-growth.com/en/tiktok-ads-mcp/)** | ✅ Live | 25 |
-| **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 18 |
+| **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 20 |
 | **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review | 27 |
 
-Connected Google data sources (live): **Search Console** 7 · **Analytics (GA4)** 11 · **Tag Manager** 17 · **Business Profile** 7 · **YouTube** 5.
+Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)** 10 · **Tag Manager** 18 · **YouTube** 5. **Business Profile** has 7 tools built and is waiting on Google API quota approval.
 
-**[→ Full tool catalog (all 233 tools)](TOOLS.md)**
+**[→ Full tool catalog (all 290+ tools)](TOOLS.md)**
 
 ### What can Opus Growth do with Google Ads?
 
@@ -104,7 +104,17 @@ Connected Google data sources (live): **Search Console** 7 · **Analytics (GA4)*
 - **Keyword research** — keyword planner and keyword reports
 - **Budget reallocation** — shift budget to your best-converting campaigns
 
-78 Google Ads tools; 233 across every connected surface. Every write action is preview-and-confirm.
+69 Google Ads tools; 290+ registered tools across every connected surface and operation. Every write action is preview-and-confirm.
+
+## Beyond ads — websites and SEO, in the same chat
+
+Opus Growth isn't only for ads. The same connector also handles the work around your campaigns, so the whole loop stays in one conversation:
+
+- **Builds and hosts your website.** Describe what you want and the AI builds an SEO-ready site on your own domain, edits it and publishes it — on isolated per-customer hosting. *(AI Server, from $29/month — a subscription, no credits.)*
+- **Gives your AI the SEO data it can't see on its own.** Keyword research (volume + difficulty), competitor keyword gaps, backlink profiles, live SERP analysis, ranked keywords, keyword trends, site-technology lookups, and brand-citation tracking across AI answer engines (Google AI, ChatGPT). *(SEO Intelligence — pay-as-you-go, no subscription.)*
+- **Measures real performance.** Core Web Vitals and PageSpeed for any page — free.
+
+Because it's one connector, you can research the keywords, build the landing page, check its Core Web Vitals and launch the Google Ads campaign that points to it — all in the same chat, without switching tools.
 
 ## Pricing
 
@@ -114,7 +124,7 @@ Connected Google data sources (live): **Search Console** 7 · **Analytics (GA4)*
 | **Pro** | **$49.99 / month** | Solo advertisers &amp; small teams (5,000 AI actions/mo) |
 | **Agency** | **$99.99 / month** | Multi-account agencies — MCC / Business Center (unlimited) |
 
-> Yearly: $499.99 / $999.99. Billed in USD via Lemon Squeezy (merchant of record). Start free at [opus-growth.com](https://opus-growth.com/en/pricing/) — no credit card for the trial.
+> Yearly: $499.99 / $999.99. Billed in USD via Paddle (merchant of record). Start free at [opus-growth.com](https://opus-growth.com/en/pricing/) — no credit card for the trial.
 
 ## Why teams manage PPC with ChatGPT &amp; Claude
 
@@ -145,9 +155,9 @@ Manage multiple client accounts (Google MCC — and soon Meta Business Center) f
 
 See [`SECURITY.md`](SECURITY.md) for our full security posture and disclosure policy.
 
-## Works with ChatGPT, Claude &amp; any MCP client
+## Works with ChatGPT, Claude &amp; any MCP-compatible app
 
-**ChatGPT** · **Claude** · Claude Code · Cursor · Codex · and any MCP-compatible client.
+**ChatGPT** · **Claude** · Claude Code · Cursor · Codex · and any other MCP-compatible app.
 
 ## Roadmap
 
@@ -178,7 +188,7 @@ Copy your connector URL from [opus-growth.com](https://opus-growth.com), open Ch
 Yes. Access is via official OAuth (we never see your password), tokens are encrypted at rest, every change is preview-and-confirm, and you can revoke access anytime.
 
 ### Which AI assistants work?
-Any MCP client — ChatGPT connectors, Claude, Claude Code, Cursor, Codex and more.
+ChatGPT (connectors), Claude, Claude Code, Cursor, Codex — and any other MCP-compatible app.
 
 ### How much does it cost?
 A 7-day free trial (no card), then **Pro $49.99/month** or **Agency $99.99/month** for multi-account teams. See [Pricing](#pricing).
