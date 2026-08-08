@@ -9,13 +9,13 @@
 
 <p><b>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP-compatible app.</b><br/>
 Paste one URL — no terminal, no API keys, no developer token.<br/>
-<sub>290+ tools · ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · Meta Ads in final platform review.</sub></p>
+<sub>200+ tools · ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · Meta Ads in final platform review.</sub></p>
 
 <p>
 <a href="https://opus-growth.com"><img src="https://img.shields.io/badge/opus--growth.com-D97757?style=for-the-badge&logoColor=white" alt="Website"></a>
 <img src="https://img.shields.io/badge/protocol-MCP-141413?style=for-the-badge" alt="Model Context Protocol">
 <img src="https://img.shields.io/badge/4%20ad%20platforms-Live-2e7d54?style=for-the-badge" alt="Four ad platforms live">
-<img src="https://img.shields.io/badge/tools-290%2B-141413?style=for-the-badge" alt="290+ tools">
+<img src="https://img.shields.io/badge/tools-200%2B-141413?style=for-the-badge" alt="200+ tools">
 <img src="https://img.shields.io/badge/works%20with-ChatGPT%20%26%20Claude-141413?style=for-the-badge" alt="Works with ChatGPT and Claude">
 </p>
 
@@ -92,7 +92,7 @@ No code. No Google Cloud project. No developer token.
 
 Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)** 10 · **Tag Manager** 18 · **YouTube** 5. **Business Profile** has 7 tools built and is waiting on Google API quota approval.
 
-**[→ Full tool catalog (all 290+ tools)](TOOLS.md)**
+**[→ Full tool catalog (all 200+ tools)](TOOLS.md)**
 
 ### What can Opus Growth do with Google Ads?
 
@@ -104,7 +104,7 @@ Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)*
 - **Keyword research** — keyword planner and keyword reports
 - **Budget reallocation** — shift budget to your best-converting campaigns
 
-69 Google Ads tools; 290+ registered tools across every connected surface and operation. Every write action is preview-and-confirm.
+69 Google Ads tools; 200+ registered tools across every connected surface and operation. Every write action is preview-and-confirm.
 
 ## Beyond ads — websites and SEO, in the same chat
 
