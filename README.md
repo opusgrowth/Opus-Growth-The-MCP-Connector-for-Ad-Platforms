@@ -82,15 +82,17 @@ No code. No Google Cloud project. No developer token.
 
 ## Which ad platforms does Opus Growth support?
 
+<!-- AUTO-PLATFORMS:start — ELLE DÜZENLEME. scripts/gen-showcase.py platform-status.json'dan üretir. -->
 | Platform | Status | Tools |
 | :-- | :-- | :-- |
-| **[Google Ads](https://opus-growth.com/en/google-ads-mcp/)** | ✅ Live | 69 |
+| **[Google Ads](https://opus-growth.com/en/google-ads-mcp/)** | ✅ Live | 72 |
 | **[Microsoft Advertising](https://opus-growth.com/en/microsoft-ads-mcp/)** (Bing) | ✅ Live | 30 |
 | **[TikTok Ads](https://opus-growth.com/en/tiktok-ads-mcp/)** | ✅ Live | 25 |
-| **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 20 |
+| **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 23 |
 | **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review | 27 |
 
 Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)** 10 · **Tag Manager** 18 · **YouTube** 5. **Business Profile** has 7 tools built and is waiting on Google API quota approval.
+<!-- AUTO-PLATFORMS:end -->
 
 **[→ Full tool catalog (all 200+ tools)](TOOLS.md)**
 
@@ -104,7 +106,9 @@ Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)*
 - **Keyword research** — keyword planner and keyword reports
 - **Budget reallocation** — shift budget to your best-converting campaigns
 
-69 Google Ads tools; 200+ registered tools across every connected surface and operation. Every write action is preview-and-confirm.
+<!-- AUTO-SUMMARY:start -->
+72 Google Ads tools; 200+ tools across every connected surface and operation. Every write action is preview-and-confirm.
+<!-- AUTO-SUMMARY:end -->
 
 ## Beyond ads — websites and SEO, in the same chat
 
