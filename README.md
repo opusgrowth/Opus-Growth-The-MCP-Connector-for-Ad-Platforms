@@ -87,7 +87,7 @@ No code. No Google Cloud project. No developer token.
 | :-- | :-- | :-- |
 | **[Google Ads](https://opus-growth.com/en/google-ads-mcp/)** | ✅ Live | 72 |
 | **[Microsoft Advertising](https://opus-growth.com/en/microsoft-ads-mcp/)** (Bing) | ✅ Live | 30 |
-| **[TikTok Ads](https://opus-growth.com/en/tiktok-ads-mcp/)** | ✅ Live | 29 |
+| **[TikTok Ads](https://opus-growth.com/en/tiktok-ads-mcp/)** | ✅ Live | 34 |
 | **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 23 |
 | **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review | 27 |
 
