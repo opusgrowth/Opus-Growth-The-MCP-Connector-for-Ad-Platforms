@@ -89,7 +89,7 @@ No code. No Google Cloud project. No developer token.
 | **[Microsoft Advertising](https://opus-growth.com/en/microsoft-ads-mcp/)** (Bing) | ✅ Live | 30 |
 | **[TikTok Ads](https://opus-growth.com/en/tiktok-ads-mcp/)** | ✅ Live | 43 |
 | **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 23 |
-| **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review | 27 |
+| **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review | 28 |
 
 Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)** 10 · **Tag Manager** 18 · **YouTube** 5. **Business Profile** has 7 tools built and is waiting on Google API quota approval.
 <!-- AUTO-PLATFORMS:end -->
