@@ -91,7 +91,7 @@ No code. No Google Cloud project. No developer token.
 | **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 23 |
 | **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review | 28 |
 
-Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)** 10 · **Tag Manager** 18 · **YouTube** 5. **Business Profile** has 8 tools built and is waiting on Google API quota approval.
+Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)** 10 · **Tag Manager** 18 · **YouTube** 5. **Business Profile** has 10 tools built and is waiting on Google API quota approval.
 <!-- AUTO-PLATFORMS:end -->
 
 **[→ Full tool catalog (all 200+ tools)](TOOLS.md)**
@@ -107,7 +107,7 @@ Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)*
 - **Budget reallocation** — shift budget to your best-converting campaigns
 
 <!-- AUTO-SUMMARY:start -->
-72 Google Ads tools; 200+ tools across every connected surface and operation. Every write action is preview-and-confirm.
+72 Google Ads tools; 250+ tools across every connected surface and operation. Every write action is preview-and-confirm.
 <!-- AUTO-SUMMARY:end -->
 
 ## Beyond ads — websites and SEO, in the same chat
