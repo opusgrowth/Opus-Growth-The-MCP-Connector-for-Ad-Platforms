@@ -9,13 +9,12 @@
 
 <p><b>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP-compatible app.</b><br/>
 Paste one URL — no terminal, no API keys, no developer token.<br/>
-<sub>200+ tools · ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · Meta Ads in final platform review.</sub></p>
+<sub>Ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · Meta Ads in final platform review.</sub></p>
 
 <p>
 <a href="https://opus-growth.com"><img src="https://img.shields.io/badge/opus--growth.com-D97757?style=for-the-badge&logoColor=white" alt="Website"></a>
 <img src="https://img.shields.io/badge/protocol-MCP-141413?style=for-the-badge" alt="Model Context Protocol">
 <img src="https://img.shields.io/badge/4%20ad%20platforms-Live-2e7d54?style=for-the-badge" alt="Four ad platforms live">
-<img src="https://img.shields.io/badge/tools-200%2B-141413?style=for-the-badge" alt="200+ tools">
 <img src="https://img.shields.io/badge/works%20with-ChatGPT%20%26%20Claude-141413?style=for-the-badge" alt="Works with ChatGPT and Claude">
 </p>
 
@@ -83,18 +82,18 @@ No code. No Google Cloud project. No developer token.
 ## Which ad platforms does Opus Growth support?
 
 <!-- AUTO-PLATFORMS:start — ELLE DÜZENLEME. scripts/gen-showcase.py platform-status.json'dan üretir. -->
-| Platform | Status | Tools |
-| :-- | :-- | :-- |
-| **[Google Ads](https://opus-growth.com/en/google-ads-mcp/)** | ✅ Live | 72 |
-| **[Microsoft Advertising](https://opus-growth.com/en/microsoft-ads-mcp/)** (Bing) | ✅ Live | 30 |
-| **[TikTok Ads](https://opus-growth.com/en/tiktok-ads-mcp/)** | ✅ Live | 43 |
-| **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live | 23 |
-| **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review | 28 |
+| Platform | Status |
+| :-- | :-- |
+| **[Google Ads](https://opus-growth.com/en/google-ads-mcp/)** | ✅ Live |
+| **[Microsoft Advertising](https://opus-growth.com/en/microsoft-ads-mcp/)** (Bing) | ✅ Live |
+| **[TikTok Ads](https://opus-growth.com/en/tiktok-ads-mcp/)** | ✅ Live |
+| **[LinkedIn Ads](https://opus-growth.com/en/linkedin-ads-mcp/)** | ✅ Live |
+| **[Meta Ads](https://opus-growth.com/en/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review |
 
-Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)** 10 · **Tag Manager** 18 · **YouTube** 5. **Business Profile** has 14 tools built and is waiting on Google API quota approval.
+Connected Google data sources (live): **Search Console** · **Analytics (GA4)** · **Tag Manager** · **YouTube** · **Business Profile**.
 <!-- AUTO-PLATFORMS:end -->
 
-**[→ Full tool catalog (all 200+ tools)](TOOLS.md)**
+**[→ Full tool catalog](TOOLS.md)**
 
 ### What can Opus Growth do with Google Ads?
 
@@ -107,7 +106,7 @@ Connected Google data sources (live): **Search Console** 6 · **Analytics (GA4)*
 - **Budget reallocation** — shift budget to your best-converting campaigns
 
 <!-- AUTO-SUMMARY:start -->
-72 Google Ads tools; 250+ tools across every connected surface and operation. Every write action is preview-and-confirm.
+Google Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus the Google data sources — every connected surface and operation in one connector. Every write action is preview-and-confirm.
 <!-- AUTO-SUMMARY:end -->
 
 ## Beyond ads — websites and SEO, in the same chat
@@ -124,11 +123,11 @@ Because it's one connector, you can research the keywords, build the landing pag
 
 | Plan | Price | For |
 | :-- | :-- | :-- |
-| **Free trial** | $0 — 7 days, no card | Try every tool (50 AI actions) |
-| **Pro** | **$49.99 / month** | Solo advertisers &amp; small teams (5,000 AI actions/mo) |
-| **Agency** | **$99.99 / month** | Multi-account agencies — MCC / Business Center (unlimited) |
+| **Free trial** | $0 — no card | Try every tool (75 credits, never expire) |
+| **Pro** | **$49 / month** | Solo advertisers &amp; small teams (5,000 AI actions/mo) |
+| **Agency** | **$99 / month** | Multi-account agencies — MCC / Business Center (unlimited) |
 
-> Yearly: $499.99 / $999.99. Billed in USD via Paddle (merchant of record). Start free at [opus-growth.com](https://opus-growth.com/en/pricing/) — no credit card for the trial.
+> Yearly: $499 / $999. Billed in USD via Paddle (merchant of record). Start free at [opus-growth.com](https://opus-growth.com/en/pricing/) — no credit card for the trial.
 
 ## Why teams manage PPC with ChatGPT &amp; Claude
 
@@ -144,11 +143,11 @@ Because it's one connector, you can research the keywords, build the landing pag
 
 - **vs. the Google Ads UI / Editor** — No dashboards to learn. You ask in plain language and get an answer or an action; the AI writes the query, you approve the change.
 - **vs. building your own API integration** — No Google Cloud project, no developer token, no OAuth code. Opus Growth is a hosted connector — paste one URL.
-- **vs. a marketing agency or freelancer** — Instant answers 24/7 from $49.99/month, and you keep full control — every change is preview-and-confirm.
+- **vs. a marketing agency or freelancer** — Instant answers 24/7 from $49/month, and you keep full control — every change is preview-and-confirm.
 
 ### Built for agencies
 
-Manage multiple client accounts (Google MCC — and soon Meta Business Center) from one AI chat. The **Agency plan ($99.99/mo)** adds multi-account switching and unlimited AI actions.
+Manage multiple client accounts (Google MCC — and soon Meta Business Center) from one AI chat. The **Agency plan ($99/mo)** adds multi-account switching and unlimited AI actions.
 
 ## Is it safe to connect my ad account?
 
@@ -195,7 +194,7 @@ Yes. Access is via official OAuth (we never see your password), tokens are encry
 ChatGPT (connectors), Claude, Claude Code, Cursor, Codex — and any other MCP-compatible app.
 
 ### How much does it cost?
-A 7-day free trial (no card), then **Pro $49.99/month** or **Agency $99.99/month** for multi-account teams. See [Pricing](#pricing).
+A free trial (no card), then **Pro $49/month** or **Agency $99/month** for multi-account teams. See [Pricing](#pricing).
 
 ### Does it support Turkish? / Türkçe destekliyor mu?
 Yes — the interface and support are fully available in Turkish. Evet, arayüz ve destek tamamen Türkçe. [Details / Detaylar →](https://opus-growth.com)
