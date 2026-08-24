@@ -1,16 +1,21 @@
 # Tool catalog
 
-All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.com/mcp`).
+Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.com/mcp`).
 
 `write` tools always run as a **dry-run preview first** and are applied only after you approve.
 
-## Google Ads + account & website operations (84)
+## Google Ads + account & website operations
 
 | Tool | What it does | Type |
 |---|---|---|
 | `account_audit` | Account Audit | read |
 | `add_keywords` | Add Keywords | write |
 | `add_negative_keyword` | Add Negative Keyword | write |
+| `list_ip_exclusions` | List IP Exclusions | read |
+| `block_ip_addresses` | Block IP Addresses | write |
+| `unblock_ip_addresses` | Unblock IP Addresses | write |
+| `fraud_setup` | Fraud Tag Setup | write |
+| `fraud_scan` | Scan for Click Fraud | read |
 | `add_pmax_images` | Add PMax Images | write |
 | `apply_recommendation` | Apply Recommendation | write |
 | `budget_pacing_alerts` | Budget Pacing Alerts | read |
@@ -58,21 +63,24 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `manage_audience_targeting` | Attach/Remove/Exclude Audience Targeting | write |
 | `manage_bidding_strategies` | Set Bid Strategy | write |
 | `manage_portfolio_bidding_strategy` | Portfolio (Shared) Bid Strategy | write |
-| `manage_campaign_proximity` | Manage Campaign Proximity (radius targeting) | destroy |
+| `manage_campaign_proximity` | Manage Campaign Proximity (radius targeting) | write |
 | `manage_device_targeting` | Manage Device Targeting (bid adjustments) | write |
 | `manage_campaign_settings` | Campaign Settings (network/location type/tracking) | write |
 | `manage_conversion_actions` | Create Conversion Action | write |
 | `manage_extension_assets` | Add Extension Assets | write |
-| `manage_keywords` | Manage Keywords | destroy |
+| `add_location_assets` | Add Location Assets | write |
+| `manage_keywords` | Manage Keywords | write |
 | `manage_shared_negative_list` | Shared Negative List Mgmt | write |
 | `marketing_insights` | Marketing Opportunities | read |
 | `marketing_overview` | Marketing Overview (Funnel) | read |
+| `get_report` | Unified Performance Report | read |
+| `describe` | Describe Platform Capabilities | read |
 | `pause_campaign` | Pause Campaign | write |
 | `performance_report` | Performance Report | read |
 | `portfolio_report` | Portfolio Report (Multi-Account) | read |
 | `provide_contact_details` | Provide Contact Details | write |
-| `remove_extension_assets` | Remove Extension Assets | destroy |
-| `remove_negative_keyword` | Remove Negative Keyword | destroy |
+| `remove_extension_assets` | Remove Extension Assets | write |
+| `remove_negative_keyword` | Remove Negative Keyword | write |
 | `rsa_asset_performance` | RSA Ad Strength & Asset Performance | read |
 | `search_terms_report` | Search Terms Report | read |
 | `set_ad_schedule` | Set Ad Schedule | write |
@@ -87,6 +95,9 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `site_edit_file` | Edit Website File | write |
 | `site_restore` | Restore Website Version | write |
 | `site_run_command` | Run Server Command | destroy |
+| `deploy_site_zip` | Deploy Site From ZIP | write |
+| `site_rebuild` | Rebuild Site From Source | write |
+| `configure_site_smtp` | Set Up Site Contact-Form Email | write |
 | `site_write_file` | Write Website File | write |
 | `site_fetch` | Fetch File To Site | write |
 | `smart_negative_keywords` | Smart Negative Keywords | read |
@@ -99,7 +110,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `upload_image_asset` | Upload Image Asset | write |
 | `upload_offline_conversions` | Upload Offline Conversions | write |
 
-## Microsoft Advertising (36)
+## Microsoft Advertising
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -130,7 +141,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `microsoft_entity_performance_report` | Microsoft Breakdown Report | read |
 | `microsoft_location_search` | Microsoft Location Search | read |
 | `microsoft_performance_report` | Microsoft Performance Report | read |
-| `remove_microsoft_negative_keywords` | Remove Microsoft Negative Keywords | destroy |
+| `remove_microsoft_negative_keywords` | Remove Microsoft Negative Keywords | write |
 | `set_microsoft_bid_strategy` | Microsoft Bid Strategy | write |
 | `update_microsoft_ad_group_status` | Microsoft Ad Group Status | write |
 | `update_microsoft_ad_group` | Update Microsoft Ad Group | write |
@@ -140,7 +151,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `update_microsoft_keyword` | Update Microsoft Keyword | write |
 | `upload_microsoft_offline_conversions` | Upload Microsoft Offline Conversions | write |
 
-## TikTok Ads (30)
+## TikTok Ads
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -153,11 +164,15 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `list_tiktok_ad_accounts` | TikTok Ad Accounts | read |
 | `list_tiktok_adgroups` | TikTok Ad Groups | read |
 | `list_tiktok_ads` | TikTok Ads | read |
+| `list_tiktok_videos` | TikTok Video Library | read |
+| `list_tiktok_posts` | TikTok Organic Posts | read |
 | `list_tiktok_audiences` | TikTok Audiences | read |
 | `list_tiktok_bc_advertisers` | TikTok BC Ad Accounts | read |
 | `list_tiktok_business_centers` | TikTok Business Centers | read |
 | `list_tiktok_campaigns` | TikTok Campaigns | read |
 | `list_tiktok_identities` | TikTok Identities | read |
+| `list_tiktok_auto_messages` | TikTok Welcome-Chat Templates | read |
+| `create_tiktok_auto_message` | Create TikTok Welcome-Chat Template | write |
 | `create_tiktok_pixel` | Create TikTok Pixel | write |
 | `list_tiktok_pixels` | TikTok Pixels | read |
 | `send_tiktok_conversion_event` | Send TikTok Conversion Event (Events API) | write |
@@ -174,8 +189,22 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `update_tiktok_campaign_status` | Update TikTok Campaign Status | write |
 | `upload_tiktok_image` | Upload TikTok Image | write |
 | `upload_tiktok_video` | Upload TikTok Video | write |
+| `list_tiktok_lead_forms` | TikTok Lead Forms | read |
+| `get_tiktok_lead_form_fields` | TikTok Lead Form Fields | read |
+| `download_tiktok_leads` | Download TikTok Leads | read |
+| `create_tiktok_customer_file_audience` | Create TikTok Customer-List Audience | write |
+| `share_tiktok_audience` | Share TikTok Audience | write |
+| `tiktok_recommendations` | TikTok Recommendations | read |
+| `list_tiktok_smart_plus` | TikTok Smart+ Objects | read |
+| `list_tiktok_gmv_max_stores` | TikTok Shop Stores (GMV Max) | read |
+| `list_tiktok_bc_pixels` | TikTok Business Center Pixels | read |
+| `list_tiktok_asset_groups` | TikTok Asset Groups | read |
+| `tiktok_advertiser_qualification` | TikTok Advertiser Qualification | read |
+| `list_tiktok_creative_portfolios` | TikTok Creative Portfolios | read |
+| `tiktok_change_history` | TikTok Change History | read |
+| `manage_tiktok_search_negative_keywords` | Manage TikTok Search Negative Keywords | write |
 
-## LinkedIn Ads (21)
+## LinkedIn Ads
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -221,6 +250,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `create_meta_post_ad` | Create Meta Post Ad | write |
 | `create_meta_video_ad` | Create Meta Video Ad | write |
 | `create_meta_instagram_post_ad` | Create Meta Instagram Post Ad | write |
+| `update_meta_instagram_post_ad` | Meta Instagram Post Ad Update | write |
 | `create_meta_website_audience` | Create Meta Website Audience | write |
 | `upload_meta_image` | Upload Meta Image | write |
 | `upload_meta_video` | Upload Meta Video | write |
@@ -238,6 +268,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `list_meta_page_posts` | Meta Page Posts | read |
 | `list_meta_instagram_posts` | Meta Instagram Posts | read |
 | `list_meta_instagram_accounts` | Meta Instagram Accounts | read |
+| `instagram_follower_growth` | Instagram Follower Growth | read |
 | `list_meta_pages` | Meta Pages | read |
 | `preview_meta_ad` | Preview Meta Ad | read |
 | `list_meta_saved_audiences` | Meta Saved Audiences | read |
@@ -248,6 +279,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `list_meta_pixels` | Meta Pixels | read |
 | `send_meta_conversion_event` | Send Meta Conversion Event (CAPI) | write |
 | `meta_campaign_insights` | Meta Campaign Insights | read |
+| `meta_change_history` | Meta Change History | read |
 | `meta_reach_estimate` | Meta Reach Estimate | read |
 | `search_meta_interests` | Meta Interest Search | read |
 | `update_meta_ad` | Update Meta Ad | write |
@@ -255,7 +287,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `update_meta_adset` | Update Meta Ad Set | write |
 | `update_meta_campaign` | Update Meta Campaign | write |
 
-## Google Search Console + SEO (7)
+## Google Search Console + SEO
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -266,6 +298,11 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `gsc_submit_sitemap` | Submit Sitemap | write |
 | `gsc_url_inspect` | URL Index Inspection | read |
 | `seo_audit` | SEO & Speed Audit | read |
+| `seo_full_analysis` | SEO Full Analysis (AEO/GEO) | read |
+| `seo_site_crawl` | SEO Site Crawl | read |
+| `seo_geo_tracker` | SEO GEO Share-of-Voice | read |
+| `seo_content_brief` | SEO Content Brief | read |
+| `seo_content_lint` | SEO Content Linter (AI-footprint) | read |
 | `seo_keyword_research` | SEO Keyword Research | read |
 | `seo_competitor_gap` | SEO Competitor Gap | read |
 | `seo_backlinks` | SEO Backlink Profile | read |
@@ -275,9 +312,12 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `seo_ranked_keywords` | SEO Ranked Keywords | read |
 | `seo_keyword_trends` | SEO Keyword Trends | read |
 | `seo_site_technologies` | SEO Site Technologies | read |
+| `seo_brand_monitor` | SEO Brand Monitor | read |
+| `seo_ai_overview` | SEO AI Overview | read |
+| `seo_reviews` | SEO Reviews & Reputation | read |
 | `core_web_vitals` | Core Web Vitals | read |
 
-## Google Analytics 4 (10)
+## Google Analytics 4
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -292,7 +332,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `ga4_realtime` | GA4 Realtime Users | read |
 | `ga4_report` | GA4 Breakdown Report | read |
 
-## Google Tag Manager (22)
+## Google Tag Manager
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -319,7 +359,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `rollback_gtm_version` | Roll Back GTM Version | destroy |
 | `update_gtm_entity` | Edit GTM Entity | destroy |
 
-## Google Business Profile (7)
+## Google Business Profile
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -327,11 +367,18 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `gbp_create_post` | Create Business Post | write |
 | `gbp_list_locations` | Business Locations | read |
 | `gbp_location_details` | Business Details | read |
+| `gbp_insights` | Business Profile Insights | read |
+| `gbp_search_categories` | Search Business Categories | read |
+| `gbp_upload_photo` | Upload Business Photo | write |
+| `gbp_create_location` | Create Business Listing | write |
+| `gbp_verification_options` | Business Verification Options | read |
+| `gbp_start_verification` | Start Business Verification | write |
+| `gbp_complete_verification` | Complete Business Verification | write |
 | `gbp_reply_review` | Reply to Review | write |
 | `gbp_reviews` | Business Reviews | read |
 | `gbp_update_location` | Update Business Details | write |
 
-## YouTube (5)
+## YouTube
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -341,7 +388,7 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `youtube_top_videos` | YouTube Top Videos | read |
 | `youtube_traffic_sources` | YouTube Traffic Sources | read |
 
-## System (10)
+## System
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -352,7 +399,25 @@ All 282 tools exposed by the Opus Growth MCP connector (`https://mcp.opus-growth
 | `report_issue` | Report Issue | write |
 | `scaffold_site` | Install Professional Site Starter | write |
 | `search` | Search Ad Accounts | read |
+| `search_tools` | Find a Tool | read |
+| `call_tool` | Run a Tool | write |
 | `site_design_guide` | Professional Site Design Guide | read |
 | `site_seo_guide` | Site SEO & Schema Guide | read |
 | `start_subscription` | Start Subscription | write |
+
+## WordPress
+
+| Tool | What it does | Type |
+|---|---|---|
+| `list_wordpress_sites` | List WordPress Sites | read |
+| `wordpress_site_info` | WordPress Site Info | read |
+| `wordpress_list_posts` | List WordPress Posts | read |
+| `wordpress_create_post` | Create WordPress Post | write |
+| `wordpress_update_post` | Update WordPress Post | write |
+| `wordpress_list_plugins` | List WordPress Plugins | read |
+| `wordpress_install_plugin` | Install WordPress Plugin | write |
+| `wordpress_cli` | WordPress WP-CLI Command | write |
+| `wordpress_woo_products` | List WooCommerce Products | read |
+| `wordpress_woo_create_product` | Create WooCommerce Product | write |
+| `wordpress_woo_orders` | List WooCommerce Orders | read |
 
