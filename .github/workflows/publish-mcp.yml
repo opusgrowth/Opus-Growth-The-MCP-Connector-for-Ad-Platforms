@@ -1,12 +1,12 @@
 name: Publish to MCP Registry
 
 # Resmî MCP Registry'ye (registry.modelcontextprotocol.io) otomatik yayın.
-# Kimlik doğrulama GitHub Actions OIDC ile yapılır — depoda saklanan sır YOKTUR.
+# Kimlik doğrulama GitHub Actions OIDC ile yapılır, depoda saklanan sır YOKTUR.
 # OIDC yalnızca io.github.<owner>/* ad alanının sahipliğini kanıtlar; server.json'daki
 # "name" bu yüzden io.github.opusgrowth/ads-mcp olmalıdır.
 #
 # YENİ SÜRÜM YAYINLAMAK: server.json içindeki "version" alanını yükselt ve push et.
-# Sürüm değişmediyse iş akışı yayını ATLAR — registry aynı sürümü reddediyor
+# Sürüm değişmediyse iş akışı yayını ATLAR, registry aynı sürümü reddediyor
 # ("cannot publish duplicate version"), boru hattı gereksiz yere kırmızıya düşmesin.
 
 on:
