@@ -106,7 +106,7 @@ Connected Google data sources (live): **Search Console** · **Analytics (GA4)** 
 - **Budget reallocation**, shift budget to your best-converting campaigns
 
 <!-- AUTO-SUMMARY:start -->
-Google Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus the Google data sources — every connected surface and operation in one connector. Every write action is preview-and-confirm.
+Google Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus the Google data sources: every connected surface and operation in one connector. Every write action is preview-and-confirm.
 <!-- AUTO-SUMMARY:end -->
 
 ## Beyond ads, websites and SEO, in the same chat
