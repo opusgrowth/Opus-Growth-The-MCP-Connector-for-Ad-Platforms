@@ -234,7 +234,7 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `update_linkedin_campaign_targeting` | Update LinkedIn Targeting | write |
 | `update_linkedin_creative_status` | Update LinkedIn Creative Status | write |
 
-## Meta Ads (45 — in final review)
+## Meta Ads (45, in final review)
 
 | Tool | What it does | Type |
 |---|---|---|
