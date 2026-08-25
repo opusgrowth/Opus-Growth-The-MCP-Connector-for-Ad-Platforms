@@ -1,4 +1,4 @@
-# Smithery manifest — Opus Growth is a REMOTE (hosted) MCP server: there is no local
+# Smithery manifest. Opus Growth is a REMOTE (hosted) MCP server: there is no local
 # start command. Clients connect over streamable HTTP and authenticate with hosted OAuth.
 startCommand:
   type: http
