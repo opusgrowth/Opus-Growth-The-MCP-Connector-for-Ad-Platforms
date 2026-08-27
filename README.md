@@ -88,7 +88,7 @@ No code. No Google Cloud project. No developer token.
 | **[Microsoft Advertising](https://opus-growth.com/microsoft-ads-mcp/)** (Bing) | ✅ Live |
 | **[TikTok Ads](https://opus-growth.com/tiktok-ads-mcp/)** | ✅ Live |
 | **[LinkedIn Ads](https://opus-growth.com/linkedin-ads-mcp/)** | ✅ Live |
-| **[Meta Ads](https://opus-growth.com/meta-ads-mcp/)** (Facebook / Instagram) | 🔜 In final platform review |
+| **[Meta Ads](https://opus-growth.com/meta-ads-mcp/)** (Facebook / Instagram) | ✅ Live |
 
 Connected Google data sources (live): **Search Console** · **Analytics (GA4)** · **Tag Manager** · **YouTube** · **Business Profile**.
 <!-- AUTO-PLATFORMS:end -->
