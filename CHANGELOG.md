@@ -3,6 +3,11 @@
 Product milestones for Opus Growth, the MCP connector for ad platforms.
 
 ## 2026-08
+- **Meta Ads (Facebook & Instagram)** cleared App Review and is live on every plan at no extra
+  cost. Campaigns, ad sets and ads, carousel and video creatives, website and lookalike
+  audiences, interest search, reach estimates, pixels and conversion events, Instagram post ads
+  and insights. Creating a new lead form still needs a Meta permission we have not requested;
+  attaching an existing form to an ad works.
 - **Google Business Profile** is live. Manage locations, business information, hours,
   categories, photos and updates from chat.
 - **LinkedIn Ads** and **TikTok Ads** cleared platform review and are live.
