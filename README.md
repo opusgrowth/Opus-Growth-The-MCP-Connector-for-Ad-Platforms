@@ -7,14 +7,14 @@
 
 <h1>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT &amp; Claude, the MCP Connector for Ad Platforms</h1>
 
-<p><b>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP-compatible app.</b><br/>
+<p><b>Manage Google, Meta, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP-compatible app.</b><br/>
 Paste one URL, no terminal, no API keys, no developer token.<br/>
-<sub>Ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · Meta Ads in final platform review.</sub></p>
+<sub>Ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · five ad platforms live.</sub></p>
 
 <p>
 <a href="https://opus-growth.com"><img src="https://img.shields.io/badge/opus--growth.com-D97757?style=for-the-badge&logoColor=white" alt="Website"></a>
 <img src="https://img.shields.io/badge/protocol-MCP-141413?style=for-the-badge" alt="Model Context Protocol">
-<img src="https://img.shields.io/badge/4%20ad%20platforms-Live-2e7d54?style=for-the-badge" alt="Four ad platforms live">
+<img src="https://img.shields.io/badge/5%20ad%20platforms-Live-2e7d54?style=for-the-badge" alt="Five ad platforms live">
 <img src="https://img.shields.io/badge/works%20with-ChatGPT%20%26%20Claude-141413?style=for-the-badge" alt="Works with ChatGPT and Claude">
 </p>
 
@@ -38,7 +38,7 @@ Paste one URL, no terminal, no API keys, no developer token.<br/>
 > *“Find the search terms burning budget and add them as negatives.”*
 > *“Increase the budget of my best-converting campaign by 20%.”*
 
-> **In one line:** a hosted MCP connector that lets you manage four live ad platforms. Google Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, from ChatGPT or Claude in plain language, with every change previewed before it runs. No code, no API keys.
+> **In one line:** a hosted MCP connector that lets you manage five live ad platforms. Google Ads, Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, from ChatGPT or Claude in plain language, with every change previewed before it runs. No code, no API keys.
 
 The AI reads your reports, finds waste, and even builds campaigns, but **never changes anything without showing you a preview and asking for your confirmation first.**
 
@@ -148,7 +148,7 @@ Because it's one connector, you can research the keywords, build the landing pag
 
 ### Built for agencies
 
-Manage multiple client accounts (Google MCC, and soon Meta Business Center) from one AI chat. The **Agency plan ($99/mo)** adds multi-account switching and unlimited AI actions.
+Manage multiple client accounts (Google MCC and Meta ad accounts) from one AI chat. The **Agency plan ($99/mo)** adds multi-account switching and unlimited AI actions.
 
 ## Is it safe to connect my ad account?
 
@@ -165,10 +165,9 @@ See [`SECURITY.md`](SECURITY.md) for our full security posture and disclosure po
 
 ## Roadmap
 
-- **Meta (Facebook/Instagram) Ads**, built and complete, in final platform review, opening soon
-- Deeper cross-platform budget optimization across all four live networks
+- Deeper cross-platform budget optimization across all five live networks
 - Scheduled reports &amp; alerts delivered to email/Slack
-- Deeper cross-platform budget optimization
+- Meta lead **form creation**, which needs a Meta permission we have not requested yet. Attaching an existing form to an ad already works.
 
 ## Get started, connect your ad accounts in 5 minutes
 
