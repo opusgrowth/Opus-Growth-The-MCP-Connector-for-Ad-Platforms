@@ -93,6 +93,23 @@ No code. No Google Cloud project. No developer token.
 Connected Google data sources (live): **Search Console** · **Analytics (GA4)** · **Tag Manager** · **YouTube** · **Business Profile**.
 <!-- AUTO-PLATFORMS:end -->
 
+## Tools
+
+Opus Growth exposes MCP tools across:
+
+- Google Ads
+- Meta Ads (Facebook / Instagram)
+- Microsoft Advertising (Bing)
+- TikTok Ads
+- LinkedIn Ads
+- Google Analytics (GA4)
+- Google Search Console
+- Google Tag Manager
+- Google Business Profile
+- YouTube
+
+Every `write` tool runs as a dry-run preview first and is applied only after you approve it.
+
 **[→ Full tool catalog](TOOLS.md)**
 
 ### What can Opus Growth do with Google Ads?
