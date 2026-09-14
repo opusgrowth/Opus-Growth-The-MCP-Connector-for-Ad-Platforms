@@ -40,14 +40,21 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `get_change_history` | Change History | read |
 | `get_conversion_settings` | Conversion Settings (Read) | read |
 | `get_conversion_tags` | Read Conversion Tag | read |
+| `list_ad_policy_issues` | List Ad Policy Issues | read |
+| `list_conversion_actions` | List Conversion Actions | read |
 | `list_conversion_goals` | Read Conversion Goals | read |
 | `update_conversion_goal` | Update Conversion Goal (primary/secondary) | write |
+| `create_google_ads_account` | Create Google Ads Account (under MCC) | write |
+| `download_meta_leads` | Download Meta Lead Answers | read |
+| `list_custom_conversion_goals` | Read Custom Conversion Goals | read |
+| `update_custom_conversion_goal` | Update Custom Conversion Goal | write |
 | `set_call_reporting` | Call Reporting Settings | write |
 | `get_pmax_assets` | PMax Assets (Read) | read |
 | `get_shared_negative_list` | Shared Negative List | read |
 | `impression_share_analysis` | Impression Share Analysis | read |
 | `instant_audit` | Instant Audit | read |
 | `keyword_opportunities` | Keyword Opportunities | read |
+| `keyword_quality_report` | Keyword Quality Report | read |
 | `keyword_planner` | Keyword Planner | read |
 | `keyword_report` | Keyword Report | read |
 | `list_ad_extensions` | Campaign Extensions | read |
@@ -68,6 +75,8 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `manage_campaign_settings` | Campaign Settings (network/location type/tracking) | write |
 | `manage_conversion_actions` | Create Conversion Action | write |
 | `manage_extension_assets` | Add Extension Assets | write |
+| `create_lead_form` | Create Lead Form | write |
+| `list_lead_form_submissions` | Lead Form Submissions | read |
 | `add_location_assets` | Add Location Assets | write |
 | `manage_keywords` | Manage Keywords | write |
 | `manage_shared_negative_list` | Shared Negative List Mgmt | write |
@@ -95,15 +104,29 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `site_edit_file` | Edit Website File | write |
 | `site_restore` | Restore Website Version | write |
 | `site_run_command` | Run Server Command | destroy |
+| `site_command_status` | Background Command Status | read |
 | `deploy_site_zip` | Deploy Site From ZIP | write |
 | `site_rebuild` | Rebuild Site From Source | write |
 | `configure_site_smtp` | Set Up Site Contact-Form Email | write |
+| `site_redirects` | Manage Website Redirects | write |
+| `site_headers` | Site Response Headers | write |
+| `site_tag_gateway` | Site Google Tag Gateway | write |
+| `site_csp_reports` | Site CSP Violation Reports | read |
+| `get_meta_ad_creative` | Read Meta Ad Creative | read |
+| `select_google_resource` | Switch Selected Google Resource | write |
+| `list_sites` | List Websites On Server | read |
+| `add_site` | Add Website To Server | write |
+| `remove_site` | Remove Website From Server | write |
 | `site_write_file` | Write Website File | write |
 | `site_fetch` | Fetch File To Site | write |
 | `smart_negative_keywords` | Smart Negative Keywords | read |
 | `update_ad_status` | Update Ad Status | write |
 | `update_campaign_status` | Update Campaign Status | write |
+| `update_ad_group_status` | Update Ad Group Status | write |
+| `update_ad_group` | Update Ad Group | write |
+| `update_sitelink` | Update Sitelink (text / descriptions / URL) | write |
 | `update_conversion_action` | Update Conversion Action (primary/secondary) | write |
+| `update_pmax_asset_group` | Update PMax Asset Group | write |
 | `update_pmax_assets` | Update PMax Assets | write |
 | `update_rsa` | Update Responsive Search Ad | write |
 | `upload_conversion_adjustments` | Adjust Conversions (refund/restate) | write |
@@ -114,6 +137,7 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 
 | Tool | What it does | Type |
 |---|---|---|
+| `add_microsoft_ad_extensions` | Add Microsoft Ad Extensions | write |
 | `add_microsoft_ad_schedule` | Microsoft Ad Schedule | write |
 | `add_microsoft_demographic_target` | Microsoft Demographic Target | write |
 | `add_microsoft_device_target` | Microsoft Device Target | write |
@@ -130,6 +154,7 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `delete_microsoft_audience` | Delete Microsoft Audience | destroy |
 | `delete_microsoft_campaign` | Delete Microsoft Campaign | destroy |
 | `list_microsoft_accounts` | Microsoft Ad Accounts | read |
+| `list_microsoft_ad_extensions` | List Microsoft Ad Extensions | read |
 | `list_microsoft_ad_groups` | Microsoft Ad Groups | read |
 | `list_microsoft_ads` | Microsoft Ads | read |
 | `list_microsoft_audiences` | Microsoft Audiences | read |
@@ -141,14 +166,17 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `microsoft_entity_performance_report` | Microsoft Breakdown Report | read |
 | `microsoft_location_search` | Microsoft Location Search | read |
 | `microsoft_performance_report` | Microsoft Performance Report | read |
+| `microsoft_search_terms_report` | Microsoft Search Terms Report | read |
+| `remove_microsoft_ad_extensions` | Remove Microsoft Ad Extensions | write |
 | `remove_microsoft_negative_keywords` | Remove Microsoft Negative Keywords | write |
 | `set_microsoft_bid_strategy` | Microsoft Bid Strategy | write |
-| `update_microsoft_ad_group_status` | Microsoft Ad Group Status | write |
 | `update_microsoft_ad_group` | Update Microsoft Ad Group | write |
+| `update_microsoft_ad_group_status` | Microsoft Ad Group Status | write |
 | `update_microsoft_ad_status` | Microsoft Ad Status | write |
 | `update_microsoft_campaign_budget` | Microsoft Campaign Budget | write |
 | `update_microsoft_campaign_status` | Microsoft Campaign Status | write |
 | `update_microsoft_keyword` | Update Microsoft Keyword | write |
+| `update_microsoft_responsive_search_ad` | Update Microsoft Responsive Search Ad | write |
 | `upload_microsoft_offline_conversions` | Upload Microsoft Offline Conversions | write |
 
 ## TikTok Ads
@@ -213,11 +241,13 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `connect_linkedin_ads` | Connect LinkedIn Ads | write |
 | `create_linkedin_campaign` | Create LinkedIn Campaign | write |
 | `create_linkedin_campaign_group` | Create LinkedIn Campaign Group | write |
+| `list_linkedin_lead_forms` | LinkedIn Lead Forms | read |
 | `create_linkedin_post_ad` | Create LinkedIn Post Ad | write |
 | `create_linkedin_text_ad` | Create LinkedIn Text Ad | write |
 | `delete_linkedin_campaign` | Delete LinkedIn Campaign | destroy |
 | `delete_linkedin_campaign_group` | Delete LinkedIn Campaign Group | destroy |
 | `delete_linkedin_creative` | Delete LinkedIn Creative | destroy |
+| `download_linkedin_leads` | Download LinkedIn Leads | read |
 | `linkedin_audience_forecast` | LinkedIn Audience Forecast | read |
 | `linkedin_ad_copy` | LinkedIn Ad Copy | read |
 | `linkedin_bid_recommendations` | LinkedIn Bid Recommendations | read |
@@ -234,7 +264,7 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `update_linkedin_campaign_targeting` | Update LinkedIn Targeting | write |
 | `update_linkedin_creative_status` | Update LinkedIn Creative Status | write |
 
-## Meta Ads (45, in final review)
+## Meta Ads
 
 | Tool | What it does | Type |
 |---|---|---|
@@ -268,12 +298,16 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `list_meta_page_posts` | Meta Page Posts | read |
 | `list_meta_instagram_posts` | Meta Instagram Posts | read |
 | `list_meta_instagram_accounts` | Meta Instagram Accounts | read |
+| `find_instagram_media_id` | Instagram Media Id Finder | read |
 | `instagram_follower_growth` | Instagram Follower Growth | read |
+| `create_meta_lead_form` | Create Meta Lead Form | write |
+| `list_meta_lead_forms` | Meta Lead Forms | read |
 | `list_meta_pages` | Meta Pages | read |
 | `preview_meta_ad` | Preview Meta Ad | read |
 | `list_meta_saved_audiences` | Meta Saved Audiences | read |
 | `list_meta_custom_conversions` | Meta Custom Conversions | read |
 | `create_meta_custom_conversion` | Create Meta Custom Conversion | write |
+| `update_meta_custom_conversion` | Rename Meta Custom Conversion | write |
 | `meta_delivery_estimate` | Meta Delivery Estimate | read |
 | `create_meta_ab_test` | Create Meta A/B Test | write |
 | `list_meta_pixels` | Meta Pixels | read |
@@ -296,9 +330,11 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `gsc_performance` | Organic Search Performance | read |
 | `gsc_sitemaps` | Sitemaps | read |
 | `gsc_submit_sitemap` | Submit Sitemap | write |
+| `gsc_delete_sitemap` | Delete Sitemap | write |
 | `gsc_url_inspect` | URL Index Inspection | read |
 | `seo_audit` | SEO & Speed Audit | read |
 | `seo_full_analysis` | SEO Full Analysis (AEO/GEO) | read |
+| `seo_history` | SEO Run History | read |
 | `seo_site_crawl` | SEO Site Crawl | read |
 | `seo_geo_tracker` | SEO GEO Share-of-Voice | read |
 | `seo_content_brief` | SEO Content Brief | read |
@@ -328,6 +364,7 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `ga4_list_ads_links` | GA4 Google Ads Links | read |
 | `ga4_list_conversions` | GA4 Conversions | read |
 | `ga4_list_properties` | GA4 Properties | read |
+| `ga4_list_data_streams` | GA4 Data Streams | read |
 | `ga4_overview` | GA4 Overview | read |
 | `ga4_realtime` | GA4 Realtime Users | read |
 | `ga4_report` | GA4 Breakdown Report | read |
@@ -365,6 +402,7 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 |---|---|---|
 | `connect_business_profile` | Connect Business Profile | write |
 | `gbp_create_post` | Create Business Post | write |
+| `gbp_list_posts` | GBP Posts | read |
 | `gbp_list_locations` | Business Locations | read |
 | `gbp_location_details` | Business Details | read |
 | `gbp_insights` | Business Profile Insights | read |
@@ -377,6 +415,7 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `gbp_reply_review` | Reply to Review | write |
 | `gbp_reviews` | Business Reviews | read |
 | `gbp_update_location` | Update Business Details | write |
+| `gbp_manage_services` | Manage Business Services | write |
 
 ## YouTube
 
@@ -400,10 +439,12 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `scaffold_site` | Install Professional Site Starter | write |
 | `search` | Search Ad Accounts | read |
 | `search_tools` | Find a Tool | read |
-| `call_tool` | Run a Tool | write |
+| `call_tool` | Run a Read Tool | read |
+| `call_write_tool` | Run a Write Tool | write |
 | `site_design_guide` | Professional Site Design Guide | read |
 | `site_seo_guide` | Site SEO & Schema Guide | read |
 | `start_subscription` | Start Subscription | write |
+| `upload_image` | Upload Image | write |
 
 ## WordPress
 
@@ -414,6 +455,27 @@ Every tool exposed by the Opus Growth MCP connector (`https://mcp.opus-growth.co
 | `wordpress_list_posts` | List WordPress Posts | read |
 | `wordpress_create_post` | Create WordPress Post | write |
 | `wordpress_update_post` | Update WordPress Post | write |
+| `wordpress_page_design` | Inspect WordPress Page Design | read |
+| `wordpress_edit_page_design` | Edit WordPress Page Design | write |
+| `wordpress_menus` | List WordPress Menus | read |
+| `wordpress_edit_menu` | Edit WordPress Menu | write |
+| `wordpress_media` | List WordPress Media | read |
+| `wordpress_upload_media` | Upload WordPress Media | write |
+| `wordpress_seo` | Read WordPress SEO Settings | read |
+| `wordpress_set_seo` | Set WordPress SEO Settings | write |
+| `wordpress_terms` | WordPress Categories & Tags | write |
+| `wordpress_languages` | WordPress Site Languages | write |
+| `wordpress_link_translations` | Link WordPress Translations | write |
+| `wordpress_get_post` | Read WordPress Post | read |
+| `wordpress_update_connector` | Update Opus Growth Connector | write |
+| `wordpress_tracking` | Read WordPress Tracking Tags | read |
+| `wordpress_set_tracking` | Set WordPress Tracking Tags | write |
+| `wordpress_users` | WordPress Users | write |
+| `wordpress_performance` | Read WordPress Speed Settings | read |
+| `wordpress_set_performance` | Set WordPress Speed Settings | write |
+| `wordpress_manage_plugin` | Manage WordPress Plugin | write |
+| `wordpress_option` | Read/Write WordPress Setting | write |
+| `wordpress_slider` | WordPress Slider Revolution | write |
 | `wordpress_list_plugins` | List WordPress Plugins | read |
 | `wordpress_install_plugin` | Install WordPress Plugin | write |
 | `wordpress_cli` | WordPress WP-CLI Command | write |
