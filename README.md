@@ -5,7 +5,7 @@
   <img alt="Opus Growth. MCP connector to manage Google Ads with ChatGPT & Claude" src="assets/opus-logo.svg" width="300">
 </picture>
 
-<h1>Manage Google, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT &amp; Claude, the MCP Connector for Ad Platforms</h1>
+<h1>Manage Google, Meta, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT &amp; Claude, the MCP Connector for Ad Platforms</h1>
 
 <p><b>Manage Google, Meta, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP-compatible app.</b><br/>
 Paste one URL, no terminal, no API keys, no developer token.<br/>
@@ -32,7 +32,7 @@ Paste one URL, no terminal, no API keys, no developer token.<br/>
 
 ## What is Opus Growth?
 
-**Opus Growth is a hosted [MCP](https://modelcontextprotocol.io) (Model Context Protocol) connector that lets you manage Google Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus Search Console, GA4, Tag Manager, Business Profile and YouTube, directly from ChatGPT, Claude and any MCP-compatible AI assistant.** Connect once, then manage everything in plain language:
+**Opus Growth is a hosted [MCP](https://modelcontextprotocol.io) (Model Context Protocol) connector that lets you manage Google Ads, Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus Search Console, GA4, Tag Manager, Business Profile and YouTube, directly from ChatGPT, Claude and any MCP-compatible AI assistant.** Connect once, then manage everything in plain language:
 
 > *“How much did I spend in the last 30 days, and which campaign is profitable?”*
 > *“Find the search terms burning budget and add them as negatives.”*
@@ -85,10 +85,10 @@ No code. No Google Cloud project. No developer token.
 | Platform | Status |
 | :-- | :-- |
 | **[Google Ads](https://opus-growth.com/google-ads-mcp/)** | ✅ Live |
+| **[Meta Ads](https://opus-growth.com/meta-ads-mcp/)** (Facebook / Instagram) | ✅ Live |
 | **[Microsoft Advertising](https://opus-growth.com/microsoft-ads-mcp/)** (Bing) | ✅ Live |
 | **[TikTok Ads](https://opus-growth.com/tiktok-ads-mcp/)** | ✅ Live |
 | **[LinkedIn Ads](https://opus-growth.com/linkedin-ads-mcp/)** | ✅ Live |
-| **[Meta Ads](https://opus-growth.com/meta-ads-mcp/)** (Facebook / Instagram) | ✅ Live |
 
 Connected Google data sources (live): **Search Console** · **Analytics (GA4)** · **Tag Manager** · **YouTube** · **Business Profile**.
 <!-- AUTO-PLATFORMS:end -->
@@ -123,7 +123,7 @@ Every `write` tool runs as a dry-run preview first and is applied only after you
 - **Budget reallocation**, shift budget to your best-converting campaigns
 
 <!-- AUTO-SUMMARY:start -->
-Google Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus the Google data sources: every connected surface and operation in one connector. Every write action is preview-and-confirm.
+Google Ads, Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus the Google data sources: every connected surface and operation in one connector. Every write action is preview-and-confirm.
 <!-- AUTO-SUMMARY:end -->
 
 ## Beyond ads, websites and SEO, in the same chat
