@@ -1,0 +1,22 @@
+{
+  "author": "Opus Growth",
+  "authorUrl": "https://opus-growth.com",
+  "category": "marketing",
+  "cloudEndpoint": "https://mcp.opus-growth.com/mcp",
+  "description": "Manage Google, Meta, Microsoft, TikTok, and LinkedIn Ads from AI assistants through one hosted MCP connector with approval-gated changes.",
+  "homepage": "https://opus-growth.com",
+  "icon": "https://raw.githubusercontent.com/opusgrowth/Opus-Growth-The-MCP-Connector-for-Ad-Platforms/main/assets/opus-growth-icon-400.png",
+  "identifier": "opusgrowth-opus-growth-ads-mcp",
+  "name": "Opus Growth",
+  "tags": [
+    "advertising",
+    "analytics",
+    "google-ads",
+    "meta-ads",
+    "microsoft-advertising",
+    "tiktok-ads",
+    "linkedin-ads",
+    "ppc"
+  ],
+  "version": "1.3.1"
+}
