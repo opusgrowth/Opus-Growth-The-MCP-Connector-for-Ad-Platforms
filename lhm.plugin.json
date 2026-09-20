@@ -18,5 +18,16 @@
     "linkedin-ads",
     "ppc"
   ],
+  "tools": [
+    {
+      "name": "describe",
+      "description": "Describe the advertising platforms, capabilities, and tools available to the authenticated Opus Growth user.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      }
+    }
+  ],
   "version": "1.3.2"
 }
