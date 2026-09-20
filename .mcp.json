@@ -1,0 +1,6 @@
+{
+  "opus-growth": {
+    "type": "http",
+    "url": "https://mcp.opus-growth.com/mcp"
+  }
+}
