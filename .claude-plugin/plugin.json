@@ -1,6 +1,6 @@
 {
   "name": "opus-growth",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Manage Google, Meta, Microsoft, TikTok, and LinkedIn Ads from Claude through the hosted Opus Growth MCP connector.",
   "author": {
     "name": "Opus Growth",

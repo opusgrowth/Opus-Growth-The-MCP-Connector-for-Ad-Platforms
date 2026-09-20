@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "opus-growth",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Manage Google, Meta, Microsoft, TikTok, and LinkedIn Ads from AI with approval-gated writes.",
   "author": {
     "name": "Opus Growth",
