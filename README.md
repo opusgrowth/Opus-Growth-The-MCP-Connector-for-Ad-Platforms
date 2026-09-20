@@ -16,6 +16,7 @@ Paste one URL, no terminal, no API keys, no developer token.<br/>
 <img src="https://img.shields.io/badge/protocol-MCP-141413?style=for-the-badge" alt="Model Context Protocol">
 <img src="https://img.shields.io/badge/5%20ad%20platforms-Live-2e7d54?style=for-the-badge" alt="Five ad platforms live">
 <img src="https://img.shields.io/badge/works%20with-ChatGPT%20%26%20Claude-141413?style=for-the-badge" alt="Works with ChatGPT and Claude">
+<a href="https://mcpvault.io/servers/opus-growth-the-mcp-connector-for-ad-platforms/health?utm_source=external_badge&utm_medium=referral&utm_campaign=mcp_health_report"><img src="https://mcpvault.io/badge/opus-growth-the-mcp-connector-for-ad-platforms.svg" alt="MCPVault: claimed"></a>
 </p>
 
 <a href="https://opus-growth.com"><b>opus-growth.com&nbsp;→</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;Free trial, 75 credits that never expire, no card
