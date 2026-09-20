@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "opus-growth",
+  "version": "1.3.1",
+  "description": "Manage Google, Meta, Microsoft, TikTok, and LinkedIn Ads from AI with approval-gated writes.",
+  "author": {
+    "name": "Opus Growth",
+    "url": "https://opus-growth.com"
+  },
+  "homepage": "https://opus-growth.com",
+  "repository": "https://github.com/opusgrowth/Opus-Growth-The-MCP-Connector-for-Ad-Platforms",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "advertising",
+    "google-ads",
+    "meta-ads",
+    "microsoft-advertising",
+    "tiktok-ads",
+    "linkedin-ads",
+    "ppc"
+  ]
+}
