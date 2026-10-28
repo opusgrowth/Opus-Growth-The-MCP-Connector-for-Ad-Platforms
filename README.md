@@ -132,22 +132,25 @@ Google Ads, Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus t
 
 Opus Growth isn't only for ads. The same connector also handles the work around your campaigns, so the whole loop stays in one conversation:
 
-- **Builds and hosts your website.** Describe what you want and the AI builds an SEO-ready site on your own domain, edits it and publishes it, on isolated per-customer hosting. *(AI Server, from $29/month, a subscription, no credits.)*
-- **Gives your AI the SEO data it can't see on its own.** Keyword research (volume + difficulty), competitor keyword gaps, backlink profiles, live SERP analysis, ranked keywords, keyword trends, site-technology lookups, and brand-citation tracking across AI answer engines (Google AI, ChatGPT). *(SEO Intelligence, pay-as-you-go, no subscription.)*
+- **Builds and hosts your website.** Describe what you want and the AI builds an SEO-ready site on your own domain, edits it and publishes it, on isolated per-customer hosting. *(AI Server: included in All-in-One with 30 GB of space, or added from the customer panel. No credits used.)*
+- **Gives your AI the SEO data it can't see on its own.** Keyword research (volume + difficulty), competitor keyword gaps, backlink profiles, live SERP analysis, ranked keywords, keyword trends, site-technology lookups, and brand-citation tracking across AI answer engines (Google AI, ChatGPT). *(SEO/GEO credits: 1,000 a month on Agency, 15,000 a month on All-in-One, extra packs from the customer panel.)*
 - **Measures real performance.** Core Web Vitals and PageSpeed for any page, free.
 
 Because it's one connector, you can research the keywords, build the landing page, check its Core Web Vitals and launch the Google Ads campaign that points to it, all in the same chat, without switching tools.
 
 ## Pricing
 
-| Plan | Price | For |
-| :-- | :-- | :-- |
-| **Free trial** | $0, no card | Try every tool (75 credits, never expire) |
-| **Pro** | **$49 / month** | Solo advertisers &amp; small teams (5,000 AI actions/mo) |
-| **Agency** | **$99 / month** | Multi-account agencies. MCC / Business Center (unlimited) |
-| **Enterprise** | **$299 / month** | Teams that need seats, SSO and priority support |
+| Plan | Price | For | What you get |
+| :-- | :-- | :-- | :-- |
+| **Free** | **$0** | Anyone who wants to try first | 75 credits that never expire · every ad tool, live changes included · preview and approval on every change · email support |
+| **Pro** | **$49 / month** | One business running its own ads | 5,000 credits renewed every month · one ad account per platform · Data Studio (Looker Studio) reports under your own brand · priority support from a person |
+| **Agency** | **$99 / month** | Agencies and freelancers managing several clients | Unlimited credits · every client account through your manager account (MCC) · 1,000 SEO/GEO credits every month · a dedicated account manager and priority support |
+| **All-in-One** | **$149 / month** | Running ads, websites and SEO/GEO on one subscription | Everything in Agency · an AI Server with 30 GB for your websites · 15,000 SEO/GEO credits every month · one WordPress site managed from the chat |
+| **Enterprise** | **Contact us** | Teams with several members | Seats, roles and central billing, priced for your team. [Contact us](https://opus-growth.com/legal/contact/) or write to support@opus-growth.com |
 
-> Yearly: $499 / $999 / $2,999. Billed in USD via Paddle (merchant of record). Start free at [opus-growth.com](https://opus-growth.com/pricing/), no credit card for the trial.
+What the credits mean: 75 credits are, for example, 37 performance reports or 25 account audits; when they run out usage pauses and nothing is charged. 5,000 credits are about 2,500 performance reports or 625 Search campaign setups a month. 1,000 SEO/GEO credits are about 25 keyword research runs or 5 full SEO/GEO analyses; 15,000 are about 375 keyword research runs. Unused SEO/GEO credits do not carry over to the next month.
+
+> Yearly billing: Pro $490, Agency $990, All-in-One $1,490 (two months free). Billed in USD via Paddle (merchant of record), cancel in one click. Start free at [opus-growth.com](https://opus-growth.com/pricing/), no credit card for the trial.
 
 ## Why teams manage PPC with ChatGPT &amp; Claude
 
@@ -213,7 +216,7 @@ Yes. Access is via official OAuth (we never see your password), tokens are encry
 ChatGPT (connectors), Claude, Claude Code, Cursor, Codex, and any other MCP-compatible app.
 
 ### How much does it cost?
-A free trial (no card), then **Pro $49/month** or **Agency $99/month** for multi-account teams. See [Pricing](#pricing).
+Free to start (75 credits, no card), then **Pro $49/month**, **Agency $99/month** for multi-client teams, or **All-in-One $149/month** with websites and SEO/GEO included. Enterprise pricing is on request. See [Pricing](#pricing).
 
 ### Does it support Turkish? / Türkçe destekliyor mu?
 Yes, the interface and support are fully available in Turkish. Evet, arayüz ve destek tamamen Türkçe. [Details / Detaylar →](https://opus-growth.com)
