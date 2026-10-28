@@ -1,0 +1,36 @@
+{
+  "name": "opus-growth",
+  "displayName": "Opus Growth",
+  "version": "1.4.0",
+  "description": "Report on and manage Google, Meta, Microsoft, TikTok, LinkedIn and ChatGPT Ads, plus GA4 and Search Console, with previewed changes.",
+  "author": {
+    "name": "Opus Growth"
+  },
+  "publisher": "Opus Growth",
+  "homepage": "https://opus-growth.com",
+  "repository": "https://github.com/opusgrowth/Opus-Growth-The-MCP-Connector-for-Ad-Platforms",
+  "license": "MIT",
+  "logo": "assets/opus-growth-icon-orange-400.png",
+  "keywords": [
+    "google-ads",
+    "meta-ads",
+    "microsoft-advertising",
+    "tiktok-ads",
+    "linkedin-ads",
+    "chatgpt-ads",
+    "ga4",
+    "search-console",
+    "advertising",
+    "ppc",
+    "mcp"
+  ],
+  "category": "integrations",
+  "tags": [
+    "advertising",
+    "ppc",
+    "analytics",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.cursor-plugin/mcp.json"
+}
