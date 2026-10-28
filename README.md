@@ -53,6 +53,8 @@ The AI reads your reports, finds waste, and even builds campaigns, but **never c
 
 **In ChatGPT or Claude:** open *Settings → Connectors (MCP) → Add*, paste your connector URL, then sign in with Google.
 
+**As a Cursor plugin:** this repository is a Cursor plugin (`.cursor-plugin/plugin.json`). It adds the connector and a skill that explains how to read reports and apply changes safely.
+
 **In config-based clients (Cursor, Claude Code):**
 
 ```json
