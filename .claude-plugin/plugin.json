@@ -10,6 +10,7 @@
   "homepage": "https://opus-growth.com",
   "repository": "https://github.com/opusgrowth/Opus-Growth-The-MCP-Connector-for-Ad-Platforms",
   "license": "MIT",
+  "privacyPolicyUrl": "https://opus-growth.com/legal/privacy/",
   "keywords": [
     "advertising",
     "google-ads",
