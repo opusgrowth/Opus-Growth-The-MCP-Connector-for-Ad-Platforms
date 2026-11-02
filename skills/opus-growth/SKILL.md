@@ -9,11 +9,11 @@ Opus Growth is a remote connector that gives you live, read and write access to 
 
 ## 1. Make sure the connector is available
 
-Check whether tools such as `get_report`, `list_entities` and `describe` are available to you. If they are not, the user has not connected Opus Growth yet. Give them the step for their app and stop until it is done:
+Check whether Opus Growth tools are available to you. Depending on the app they appear either as individual operations (`get_report`, `list_entities`, `describe`) or as a few capability tools (`campaign_reporting`, `campaign_manager`, `tool_help` and others) that take an `operation` name, such as `campaign_reporting` with `operation="get_report"`. If neither is there, the user has not connected Opus Growth yet. Give them the step for their app and stop until it is done:
 
-- **Claude (web, desktop, mobile):** Settings > Connectors > Add custom connector, then paste `https://mcp.opus-growth.com/mcp`.
+- **Claude (web, desktop, mobile):** Settings > Connectors, open Opus Growth from the directory, or select Add custom connector and paste `https://mcp.opus-growth.com/mcp/claude`.
 - **ChatGPT (Plus, Pro, Business):** open the Plugins menu, choose Add custom MCP server and paste `https://mcp.opus-growth.com/mcp`.
-- **Claude Code:** run `claude mcp add --transport http opus-growth https://mcp.opus-growth.com/mcp`.
+- **Claude Code:** install this plugin, or run `claude mcp add --transport http opus-growth https://mcp.opus-growth.com/mcp/claude`.
 - **Cursor:** install the Opus Growth plugin, or add `https://mcp.opus-growth.com/mcp` as a remote MCP server in Cursor Settings, then sign in when Cursor asks.
 
 The user signs in with Google the first time. A free trial with 75 credits that never expire starts automatically, with no credit card. Ad accounts are connected from the chat (for example "connect my Google Ads account") or from the panel at https://platform.opus-growth.com.
@@ -23,7 +23,7 @@ The user signs in with Google the first time. A free trial with 75 credits that 
 1. Find accounts and objects with `list_entities(platform, entity, account, parent_id)`. Platforms: `google_ads`, `meta`, `microsoft`, `tiktok`, `linkedin`, `chatgpt_ads`.
 2. Pull numbers with `get_report(platform, account, days, level, breakdown)`. It also covers `ga4`, `search_console`, `youtube` and `business_profile`.
 3. If you are unsure which levels, breakdowns or entity names a platform accepts, call `describe(platform)` instead of guessing.
-4. The visible tool list is a core subset. For WordPress, Google Business Profile, hosting, Tag Manager, audiences, conversions or platform specific creative tools, call `search_tools(query)` before telling the user something is not possible.
+4. If you cannot see the operation you need (WordPress, Google Business Profile, Tag Manager, audiences, conversions), look it up before telling the user something is not possible: `tool_help(query)` with capability tools, or `search_tools(query)` where the app lists individual operations.
 
 Always state the account, the date range and the currency with the numbers you report.
 
@@ -43,7 +43,7 @@ Always state the account, the date range and the currency with the numbers you r
 | "Where am I wasting money?" | `search_terms_report` and `account_audit`, then propose negatives with `add_negative_keyword` (preview first). |
 | "Pause campaign X" | Find it with `list_entities`, then `update_campaign_status` with `confirm=false`, show, then `confirm=true`. |
 | "Give me a report for my client" | `marketing_report_pdf` returns a download link to a branded PDF. Only use `looker_studio_report` when the user asks for Data Studio or Looker Studio by name. |
-| "Build me a website" | Uses the user's AI Server: `list_sites`, `add_site`, `site_write_file`. Use `search_tools("website")` for the rest. |
+| "Build me a website" | Uses the user's AI Server: `list_sites`, `add_site`, `site_write_file`. Look up the rest with `tool_help("website")` or `search_tools("website")`. |
 
 More detail per workflow is in `references/workflows.md`.
 

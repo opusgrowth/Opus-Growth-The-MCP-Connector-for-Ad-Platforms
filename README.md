@@ -53,6 +53,8 @@ The AI reads your reports, finds waste, and even builds campaigns, but **never c
 
 **In ChatGPT or Claude:** open *Settings → Connectors (MCP) → Add*, paste your connector URL, then sign in with Google.
 
+**As a Claude plugin:** this repository is also a Claude plugin (`.claude-plugin/plugin.json`). It contains one skill (`skills/opus-growth`) and one remote MCP server, `https://mcp.opus-growth.com/mcp/claude` (`.mcp.json`), the same server as the Opus Growth connector in Claude's directory. The plugin runs no local code, hooks or scripts. Requests go only to that server, after the user signs in to Opus Growth with OAuth, and the server calls the official APIs of the ad and analytics accounts the user connects.
+
 **As a Cursor plugin:** this repository is a Cursor plugin (`.cursor-plugin/plugin.json`). It adds the connector and a skill that explains how to read reports and apply changes safely.
 
 **In config-based clients (Cursor, Claude Code):**

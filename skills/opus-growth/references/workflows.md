@@ -24,7 +24,7 @@
 - Data Studio (Looker Studio): `looker_studio_report` returns a link that copies a ready template into the user's own Google account. Data Studio asks the user to sign in to Opus Growth once.
 
 ## Conversion tracking health
-1. `conversion_tracking_health` (search with `search_tools("conversion")` if it is not visible).
+1. `conversion_tracking_health` (look it up with `tool_help("conversion")` or `search_tools("conversion")` if it is not visible).
 2. Explain what is missing in plain words: which action, on which platform, since when.
 3. Offer the fix as a preview first.
 

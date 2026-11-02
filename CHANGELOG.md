@@ -2,6 +2,10 @@
 
 Product milestones for Opus Growth, the MCP connector for ad platforms.
 
+## 2026-11
+- **Claude plugin:** this repository can be installed as a Claude plugin. Its connector uses
+  `https://mcp.opus-growth.com/mcp/claude`, the same server as the Opus Growth listing in Claude's directory.
+
 ## 2026-10
 - **Plans:** Free ($0, 75 credits that never expire), Pro ($49/month), Agency ($99/month) and
   All-in-One ($149/month). Agency now includes 1,000 SEO/GEO credits every month. All-in-One adds
