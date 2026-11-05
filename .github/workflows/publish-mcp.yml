@@ -1,12 +1,12 @@
 name: Publish to MCP Registry
 
 # Resmî MCP Registry'ye (registry.modelcontextprotocol.io) otomatik yayın.
-# Kimlik doğrulama GitHub Actions OIDC ile yapılır, depoda saklanan sır YOKTUR.
+# Kimlik doğrulama GitHub Actions OIDC ile yapılır — depoda saklanan sır YOKTUR.
 # OIDC yalnızca io.github.<owner>/* ad alanının sahipliğini kanıtlar; server.json'daki
 # "name" bu yüzden io.github.opusgrowth/ads-mcp olmalıdır.
 #
 # YENİ SÜRÜM YAYINLAMAK: server.json içindeki "version" alanını yükselt ve push et.
-# Sürüm değişmediyse iş akışı yayını ATLAR, registry aynı sürümü reddediyor
+# Sürüm değişmediyse iş akışı yayını ATLAR — registry aynı sürümü reddediyor
 # ("cannot publish duplicate version"), boru hattı gereksiz yere kırmızıya düşmesin.
 
 on:
@@ -34,7 +34,8 @@ jobs:
           desc = d.get("description", "")
           if len(desc) > 100:
               errs.append(f"description is {len(desc)} chars; registry limit is 100")
-          if not d.get("name", "").startswith("io.github.opusgrowth/"):
+          name = d.get("name", "")
+          if not (name.startswith("io.github.opusgrowth/") or name.startswith("com.opus-growth/")):
               errs.append("name must start with io.github.opusgrowth/ (GitHub OIDC only proves that namespace)")
           if not d.get("version"):
               errs.append("version is required")
@@ -57,6 +58,11 @@ jobs:
           import json, os, urllib.request
           local = json.load(open("server.json"))
           name, version = local["name"], local["version"]
+          if name.startswith("com.opus-growth/"):
+              print("DNS namespace is published from the origin. CI does not publish it.")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+                  fh.write("needed=false\n")
+              raise SystemExit(0)
           try:
               url = "https://registry.modelcontextprotocol.io/v0/servers?search=" + name.split("/")[0]
               with urllib.request.urlopen(url, timeout=20) as r:
