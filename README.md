@@ -5,11 +5,11 @@
   <img alt="Opus Growth. MCP connector to manage Google Ads with ChatGPT & Claude" src="assets/opus-logo.svg" width="300">
 </picture>
 
-<h1>Manage Google, Meta, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT &amp; Claude, the MCP Connector for Ad Platforms</h1>
+<h1>Hosted Google Ads MCP server for ChatGPT and Claude</h1>
 
-<p><b>Manage Google, Meta, Microsoft, TikTok &amp; LinkedIn Ads from ChatGPT, Claude &amp; any MCP-compatible app.</b><br/>
-Paste one URL, no terminal, no API keys, no developer token.<br/>
-<sub>Ads, websites &amp; SEO data in one connector · real write actions with preview &amp; approval · five ad platforms live.</sub></p>
+<p><b>Hosted Google Ads MCP server. Claude and ChatGPT read a live account and change campaigns only after you approve a preview. No developer token.</b><br/>
+The same connection also runs Meta, Microsoft, TikTok, LinkedIn and ChatGPT Ads.<br/>
+<sub>Paste one URL. No terminal, no API keys.</sub></p>
 
 <p>
 <a href="https://opus-growth.com"><img src="https://img.shields.io/badge/opus--growth.com-D97757?style=for-the-badge&logoColor=white" alt="Website"></a>
@@ -32,13 +32,13 @@ Paste one URL, no terminal, no API keys, no developer token.<br/>
 
 ## What is Opus Growth?
 
-**Opus Growth is a hosted [MCP](https://modelcontextprotocol.io) (Model Context Protocol) connector that lets you manage Google Ads, Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus Search Console, GA4, Tag Manager, Business Profile and YouTube, directly from ChatGPT, Claude and any MCP-compatible AI assistant.** Connect once, then manage everything in plain language:
+**Opus Growth is a hosted [Google Ads MCP](https://opus-growth.com/google-ads-mcp/) server.** Google's official server is read-only and you host it yourself. Opus Growth runs on our side, needs no developer token, and previews every write before it applies. The same [MCP](https://modelcontextprotocol.io) connection also manages Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus Search Console, GA4, Tag Manager, Business Profile and YouTube, from ChatGPT, Claude and any MCP-compatible assistant. Connect once, then manage everything in plain language:
 
 > *“How much did I spend in the last 30 days, and which campaign is profitable?”*
 > *“Find the search terms burning budget and add them as negatives.”*
 > *“Increase the budget of my best-converting campaign by 20%.”*
 
-> **In one line:** a hosted MCP connector that lets you manage five live ad platforms. Google Ads, Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, from ChatGPT or Claude in plain language, with every change previewed before it runs. No code, no API keys.
+> **In one line:** a hosted Google Ads MCP server for ChatGPT and Claude. It reads the live account and changes campaigns only after a preview you approve. No developer token. Meta, Microsoft, TikTok and LinkedIn Ads use the same connection.
 
 The AI reads your reports, finds waste, and even builds campaigns, but **never changes anything without showing you a preview and asking for your confirmation first.**
 
