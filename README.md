@@ -2,25 +2,25 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/opus-logo-light.svg">
-  <img alt="Opus Growth. MCP connector to manage Google Ads with ChatGPT & Claude" src="assets/opus-logo.svg" width="300">
+  <img alt="Opus Growth. MCP connector to manage Google Ads with ChatGPT, Claude and Grok" src="assets/opus-logo.svg" width="300">
 </picture>
 
-<h1>Hosted Google Ads MCP server for ChatGPT and Claude</h1>
+<h1>Hosted Google Ads MCP server for ChatGPT, Claude and Grok</h1>
 
-<p><b>Hosted Google Ads MCP server. Claude and ChatGPT read a live account and change campaigns only after you approve a preview. No developer token.</b><br/>
+<p><b>Hosted Google Ads MCP server. ChatGPT, Claude, Grok and other AI apps read a live account and change campaigns only after you approve a preview. No developer token.</b><br/>
 The same connection also runs Meta, Microsoft, TikTok, LinkedIn and ChatGPT Ads.<br/>
-<sub>Paste one URL. No terminal, no API keys.</sub></p>
+<sub>Install the ChatGPT plugin or paste one URL. No terminal, no API keys.</sub></p>
 
 <p>
 <a href="https://opus-growth.com"><img src="https://img.shields.io/badge/opus--growth.com-D97757?style=for-the-badge&logoColor=white" alt="Website"></a>
 <img src="https://img.shields.io/badge/protocol-MCP-141413?style=for-the-badge" alt="Model Context Protocol">
 <img src="https://img.shields.io/badge/5%20ad%20platforms-Live-2e7d54?style=for-the-badge" alt="Five ad platforms live">
-<img src="https://img.shields.io/badge/works%20with-ChatGPT%20%26%20Claude-141413?style=for-the-badge" alt="Works with ChatGPT and Claude">
+<img src="https://img.shields.io/badge/works%20with-ChatGPT%2C%20Claude%2C%20Grok-141413?style=for-the-badge" alt="Works with ChatGPT, Claude and Grok">
 </p>
 
 <a href="https://opus-growth.com"><b>opus-growth.com&nbsp;→</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;Free trial, 75 credits that never expire, no card
 
-<sub><a href="#what-is-opus-growth">What</a> · <a href="#quickstart">Quickstart</a> · <a href="#how-do-i-connect-google-ads-to-chatgpt-or-claude">How it works</a> · <a href="#which-ad-platforms-does-opus-growth-support">Platforms</a> · <a href="#pricing">Pricing</a> · <a href="#is-it-safe-to-connect-my-ad-account">Security</a> · <a href="#faq">FAQ</a></sub>
+<sub><a href="#what-is-opus-growth">What</a> · <a href="#quickstart">Quickstart</a> · <a href="#how-do-i-connect-google-ads-to-chatgpt-claude-or-grok">How it works</a> · <a href="#which-ad-platforms-does-opus-growth-support">Platforms</a> · <a href="#pricing">Pricing</a> · <a href="#is-it-safe-to-connect-my-ad-account">Security</a> · <a href="#faq">FAQ</a></sub>
 
 <br/><br/>
 
@@ -32,13 +32,13 @@ The same connection also runs Meta, Microsoft, TikTok, LinkedIn and ChatGPT Ads.
 
 ## What is Opus Growth?
 
-**Opus Growth is a hosted [Google Ads MCP](https://opus-growth.com/google-ads-mcp/) server.** Google's official server is read-only and you host it yourself. Opus Growth runs on our side, needs no developer token, and previews every write before it applies. The same [MCP](https://modelcontextprotocol.io) connection also manages Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus Search Console, GA4, Tag Manager, Business Profile and YouTube, from ChatGPT, Claude and any MCP-compatible assistant. Connect once, then manage everything in plain language:
+**Opus Growth is a hosted [Google Ads MCP](https://opus-growth.com/google-ads-mcp/) server.** Google's official server is read-only and you host it yourself. Opus Growth runs on our side, needs no developer token, and previews every write before it applies. The same [MCP](https://modelcontextprotocol.io) connection also manages Meta Ads, Microsoft Advertising, TikTok Ads and LinkedIn Ads, plus Search Console, GA4, Tag Manager, Business Profile and YouTube, from ChatGPT, Claude, Grok and any MCP-compatible assistant. Connect once, then manage everything in plain language:
 
 > *“How much did I spend in the last 30 days, and which campaign is profitable?”*
 > *“Find the search terms burning budget and add them as negatives.”*
 > *“Increase the budget of my best-converting campaign by 20%.”*
 
-> **In one line:** a hosted Google Ads MCP server for ChatGPT and Claude. It reads the live account and changes campaigns only after a preview you approve. No developer token. Meta, Microsoft, TikTok and LinkedIn Ads use the same connection.
+> **In one line:** a hosted Google Ads MCP server for ChatGPT, Claude, Grok and other AI apps. It reads the live account and changes campaigns only after a preview you approve. No developer token. Meta, Microsoft, TikTok and LinkedIn Ads use the same connection.
 
 The AI reads your reports, finds waste, and even builds campaigns, but **never changes anything without showing you a preview and asking for your confirmation first.**
 
@@ -51,7 +51,9 @@ The AI reads your reports, finds waste, and even builds campaigns, but **never c
 
 ## Quickstart
 
-**In ChatGPT or Claude:** open *Settings → Connectors (MCP) → Add*, paste your connector URL, then sign in with Google.
+**In ChatGPT:** open the published Opus Growth plugin at [opus-growth.com/chatgpt](https://opus-growth.com/chatgpt), install it, approve the Opus Growth sign-in, then start a chat with @Opus Growth.
+
+**In Claude or Grok:** add `https://mcp.opus-growth.com/mcp` as a custom connector (Claude: *Settings → Connectors → Add custom connector*; Grok: *grok.com/connectors → New Connector → Custom*), then sign in with Google.
 
 **As a Claude plugin:** this repository is also a Claude plugin (`.claude-plugin/plugin.json`). It contains one skill (`skills/opus-growth`) and one remote MCP server, `https://mcp.opus-growth.com/mcp/claude` (`.mcp.json`), the same server as the Opus Growth connector in Claude's directory. The plugin runs no local code, hooks or scripts. Requests go only to that server, after the user signs in to Opus Growth with OAuth, and the server calls the official APIs of the ad and analytics accounts the user connects.
 
@@ -72,13 +74,13 @@ The AI reads your reports, finds waste, and even builds campaigns, but **never c
 Your connector URL is **`https://mcp.opus-growth.com/mcp`**, setup takes about 60 seconds.
 
 <div align="center">
-<img src="assets/screens/opus-growth-connect-3-steps.png" alt="Connect Google Ads to ChatGPT or Claude in three steps, copy your connector URL, paste into your AI assistant, sign in with Google" width="840">
+<img src="assets/screens/opus-growth-connect-3-steps.png" alt="Connect Google Ads to Claude, Grok or another MCP app in three steps, copy your connector URL, paste it, sign in with Google" width="840">
 </div>
 
-## How do I connect Google Ads to ChatGPT or Claude?
+## How do I connect Google Ads to ChatGPT, Claude or Grok?
 
-1. **Copy** the connector URL: `https://mcp.opus-growth.com/mcp`
-2. **Paste** it into ChatGPT / Claude → *Settings → Connectors (MCP)*
+1. **ChatGPT:** open the published Opus Growth plugin at [opus-growth.com/chatgpt](https://opus-growth.com/chatgpt) and install it
+2. **Claude, Grok and other MCP apps:** add `https://mcp.opus-growth.com/mcp` as a custom connector (Claude: *Settings → Connectors*; Grok: *grok.com/connectors*)
 3. **Sign in** with Google (official OAuth), done in about 60 seconds
 
 No code. No Google Cloud project. No developer token.
@@ -154,7 +156,7 @@ What the credits mean: 75 credits are, for example, 37 performance reports or 25
 
 > Yearly billing: Pro $490, Agency $990, All-in-One $1,490 (two months free). Billed in USD via Paddle (merchant of record), cancel in one click. Start free at [opus-growth.com](https://opus-growth.com/pricing/), no credit card for the trial.
 
-## Why teams manage PPC with ChatGPT &amp; Claude
+## Why teams manage PPC with ChatGPT, Claude &amp; Grok
 
 | Managing ads the old way | With Opus Growth |
 | :-- | :-- |
@@ -183,9 +185,9 @@ Manage multiple client accounts (Google MCC and Meta ad accounts) from one AI ch
 
 See [`SECURITY.md`](SECURITY.md) for our full security posture and disclosure policy.
 
-## Works with ChatGPT, Claude &amp; any MCP-compatible app
+## Works with ChatGPT, Claude, Grok &amp; any MCP-compatible app
 
-**ChatGPT** · **Claude** · Claude Code · Cursor · Codex · and any other MCP-compatible app.
+**ChatGPT** · **Claude** · **Grok** · Claude Code · Cursor · Codex · and any other MCP-compatible app.
 
 ## Roadmap
 
@@ -209,13 +211,13 @@ See [`SECURITY.md`](SECURITY.md) for our full security posture and disclosure po
 No. One URL and one login. No terminal, no API keys, no developer token.
 
 ### How do I connect Google Ads to ChatGPT?
-Copy your connector URL from [opus-growth.com](https://opus-growth.com), open ChatGPT → *Settings → Connectors (MCP) → Add*, paste the URL, and sign in with Google. It takes about 5 minutes.
+Open the published Opus Growth plugin at [opus-growth.com/chatgpt](https://opus-growth.com/chatgpt), install it, approve the Opus Growth sign-in, then start a chat with @Opus Growth and connect Google Ads with one Google sign-in. It takes about 5 minutes.
 
 ### Is it safe to connect my account?
 Yes. Access is via official OAuth (we never see your password), tokens are encrypted at rest, every change is preview-and-confirm, and you can revoke access anytime.
 
 ### Which AI assistants work?
-ChatGPT (connectors), Claude, Claude Code, Cursor, Codex, and any other MCP-compatible app.
+ChatGPT (published plugin), Claude, Grok, Claude Code, Cursor, Codex, and any other MCP-compatible app.
 
 ### How much does it cost?
 Free to start (75 credits, no card), then **Pro $49/month**, **Agency $99/month** for multi-client teams, or **All-in-One $149/month** with websites and SEO/GEO included. Enterprise pricing is on request. See [Pricing](#pricing).
