@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/opus-logo-light.svg">
-  <img alt="Opus Growth. MCP connector to manage Google Ads with ChatGPT, Claude and Grok" src="assets/opus-logo.svg" width="300">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/opus-logo-light.png">
+  <img alt="Opus Growth. MCP connector to manage Google Ads with ChatGPT, Claude and Grok" src="assets/opus-logo.png" width="300">
 </picture>
 
 <h1>Hosted Google Ads MCP server for ChatGPT, Claude and Grok</h1>
