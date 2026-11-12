@@ -18,7 +18,7 @@ The same connection also runs Meta, Microsoft, TikTok, LinkedIn and ChatGPT Ads.
 <img src="https://img.shields.io/badge/works%20with-ChatGPT%2C%20Claude%2C%20Grok-141413?style=for-the-badge" alt="Works with ChatGPT, Claude and Grok">
 </p>
 
-<a href="https://opus-growth.com"><b>opus-growth.com&nbsp;→</b></a>&nbsp;&nbsp;·&nbsp;&nbsp;Free trial, 75 credits that never expire, no card
+<a href="https://opus-growth.com"><b>opus-growth.com&nbsp;→</b></a>
 
 <sub><a href="#what-is-opus-growth">What</a> · <a href="#quickstart">Quickstart</a> · <a href="#how-do-i-connect-google-ads-to-chatgpt-claude-or-grok">How it works</a> · <a href="#which-ad-platforms-does-opus-growth-support">Platforms</a> · <a href="#pricing">Pricing</a> · <a href="#is-it-safe-to-connect-my-ad-account">Security</a> · <a href="#faq">FAQ</a></sub>
 
@@ -146,15 +146,14 @@ Because it's one connector, you can research the keywords, build the landing pag
 
 | Plan | Price | For | What you get |
 | :-- | :-- | :-- | :-- |
-| **Free** | **$0** | Anyone who wants to try first | 75 credits that never expire · every ad tool, live changes included · preview and approval on every change · email support |
-| **Pro** | **$49 / month** | One business running its own ads | 5,000 credits renewed every month · one ad account per platform · Data Studio (Looker Studio) reports under your own brand · priority support from a person |
-| **Agency** | **$99 / month** | Agencies and freelancers managing several clients | Unlimited credits · every client account through your manager account (MCC) · 1,000 SEO/GEO credits every month · a dedicated account manager and priority support |
+| **Pro** | **$49 / month** | One business running its own ads | One ad account per platform · Data Studio (Looker Studio) reports under your own brand · priority support from a person |
+| **Agency** | **$99 / month** | Agencies and freelancers managing several clients | Every client account through your manager account (MCC) · 1,000 SEO/GEO credits every month · a dedicated account manager and priority support |
 | **All-in-One** | **$149 / month** | Running ads, websites and SEO/GEO on one subscription | Everything in Agency · an AI Server with 30 GB for your websites · 15,000 SEO/GEO credits every month · one WordPress site managed from the chat |
 | **Enterprise** | **Contact us** | Teams with several members | Seats, roles and central billing, priced for your team. [Contact us](https://opus-growth.com/legal/contact/) or write to support@opus-growth.com |
 
-What the credits mean: 75 credits are, for example, 37 performance reports or 25 account audits; when they run out usage pauses and nothing is charged. 5,000 credits are about 2,500 performance reports or 625 Search campaign setups a month. 1,000 SEO/GEO credits are about 25 keyword research runs or 5 full SEO/GEO analyses; 15,000 are about 375 keyword research runs. Unused SEO/GEO credits do not carry over to the next month.
+What the credits mean: 1,000 SEO/GEO credits are about 25 keyword research runs or 5 full SEO/GEO analyses; 15,000 are about 375 keyword research runs. Unused SEO/GEO credits do not carry over to the next month.
 
-> Yearly billing: Pro $490, Agency $990, All-in-One $1,490 (two months free). Billed in USD via Paddle (merchant of record), cancel in one click. Start free at [opus-growth.com](https://opus-growth.com/pricing/), no credit card for the trial.
+> Yearly billing: Pro $490, Agency $990, All-in-One $1,490 (two months free). Billed in USD via Paddle (merchant of record), cancel in one click. [Choose your plan and get started.](https://opus-growth.com/pricing/)
 
 ## Why teams manage PPC with ChatGPT, Claude &amp; Grok
 
@@ -201,7 +200,7 @@ See [`SECURITY.md`](SECURITY.md) for our full security posture and disclosure po
 
 ### 👉 [opus-growth.com](https://opus-growth.com)
 
-**Free trial: 75 credits that never expire, no card required.**
+**Choose your plan and get started.**
 
 </div>
 
@@ -220,7 +219,7 @@ Yes. Access is via official OAuth (we never see your password), tokens are encry
 ChatGPT (published plugin), Claude, Grok, Claude Code, Cursor, Codex, and any other MCP-compatible app.
 
 ### How much does it cost?
-Free to start (75 credits, no card), then **Pro $49/month**, **Agency $99/month** for multi-client teams, or **All-in-One $149/month** with websites and SEO/GEO included. Enterprise pricing is on request. See [Pricing](#pricing).
+**Pro $49/month**, **Agency $99/month** for multi-client teams, or **All-in-One $149/month** with websites and SEO/GEO included. Enterprise pricing is on request. See [Pricing](#pricing).
 
 ### Does it support Turkish? / Türkçe destekliyor mu?
 Yes, the interface and support are fully available in Turkish. Evet, arayüz ve destek tamamen Türkçe. [Details / Detaylar →](https://opus-growth.com)
