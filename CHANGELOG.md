@@ -3,6 +3,8 @@
 Product milestones for Opus Growth, the MCP connector for ad platforms.
 
 ## 2026-11
+- **Plugin 1.5.2:** removed an unused GitHub Actions workflow. The plugin ships no scripts, hooks
+  or install steps; it connects to the remote server only.
 - **Claude plugin:** this repository can be installed as a Claude plugin. Its connector uses
   `https://mcp.opus-growth.com/mcp/claude`, the same server as the Opus Growth listing in Claude's directory.
 
